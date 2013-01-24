@@ -44,3 +44,11 @@ export PATH=$PATH:$AWS_RDS_HOME/bin
 export ELASTICBEANSTALK_URL=https://elasticbeanstalk.eu-west-1.amazonaws.com
 export AWS_EBT_HOME=/Applications/AWS/elasticbeanstalk-cli/elasticbeanstalk-cli
 export PATH=$PATH:$AWS_EBT_HOME/bin
+
+# BuboBox dev
+export APPLICATION_ENV=development
+
+# Phing
+export PHP_COMMAND=/usr/bin/php
+export PHING_HOME=/Applications/MAMP/bin/php/php5.3.6/lib/php/phing
+export PHP_CLASSPATH=/Applications/MAMP/bin/php/php5.3.6/lib/php/phing:/Applications/MAMP/bin/php/php5.3.6/lib/php/:/Applications/MAMP/bin/php/php5.3.6/lib/php/phing/tasks/ext
