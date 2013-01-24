@@ -137,6 +137,7 @@ alias selenium="java -jar /usr/local/bin/selenium-server-standalone-2.25.0.jar"
 alias phpini="$EDITOR /Applications/MAMP/bin/php/php5.3.6/conf/php.ini"
 alias browserstack="java -jar ~/Applications/BrowserStackTunnel.jar"
 alias randpass="openssl rand -base64 12" # generate random password
+alias mysql.localhost=mysql -proot -u root -h localhost --port 3306 bubobox_test
 
 # SSH Machines
 alias ssh.ci="ssh -i ~/.ssh/BBBXtemp.pem bitnami@ci.bubobox.com"
