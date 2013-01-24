@@ -53,8 +53,8 @@
 	old = red bold
 	new = green bold
 [color "status"]
-	added = yellow
-	changed = green
+	added = green
+	changed = red
 	untracked = cyan
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
