@@ -163,3 +163,8 @@ function unquarantine() {
 		xattr -r -d "$attribute" "$@"
 	done
 }
+
+# Colored tail
+function tailc() {
+	tail $@ | perl -pe 's/.*\bNotice\b.*/\e[0;32;40m$&\e[0m/g; s/.*\bFatal\b.*/\e[0;31;40m$&\e[0m/g; s/.*\bParse\b.*/\e[0;36;40m$&\e[0m/g; s/.*\bWarning\b.*/\e[0;33;40m$&\e[0m/g; s/.*\bCatchable\b.*/\e[0;35;40m$&\e[0m/g; s/.*\bNOTICE\b.*/\e[0;32;40m$&\e[0m/g; s/.*\bALERT\b.*/\e[0;37;41m$&\e[0m/g; s/.*\bEMERG\b.*/\e[0;36;40m$&\e[0m/g; s/.*\bWARN\b.*/\e[0;33;40m$&\e[0m/g; s/.*\bINFO\b.*/\e[0;35;40m$&\e[0m/g; s/.*\bDEBUG\b.*/\e[0;34;40m$&\e[0m/g; s/.*\bERR\b.*/\e[0;31;40m$&\e[0m/g'
+}
