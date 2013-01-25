@@ -11,7 +11,7 @@ alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
-alias g="git"
+alias g="git "
 alias h="history"
 alias j="jobs"
 alias v="vim"
@@ -137,13 +137,15 @@ alias selenium="java -jar /usr/local/bin/selenium-server-standalone-2.25.0.jar"
 alias phpini="$EDITOR /Applications/MAMP/bin/php/php5.3.6/conf/php.ini"
 alias browserstack="java -jar ~/Applications/BrowserStackTunnel.jar"
 alias randpass="openssl rand -base64 12" # generate random password
-alias mysql.localhost=mysql -proot -u root -h localhost --port 3306 bubobox_test
+alias mysql.localhost="mysql -proot -u root -h localhost --port 3306 bubobox_test"
 
 # SSH Machines
 alias ssh.ci="ssh -i ~/.ssh/BBBXtemp.pem bitnami@ci.bubobox.com"
 
 # Projects (maybe this should be in a git ignored files because this is different for every user)
 alias admin="cd ~/Code/bubobox/admin/"
+alias widget="cd ~/Code/bubobox/widget/"
+alias api="cd ~/Code/bubobox/api/"
 
 # Open apps
 alias mail="open -a Mail"
@@ -154,6 +156,3 @@ alias firefox="open -a Firefox"
 alias safari="open -a Safari"
 alias transmit="open -a Transmit"
 
-
-alias widget="cd ~/Code/bubobox/widget/"
-alias api="cd ~/Code/bubobox/api/"
