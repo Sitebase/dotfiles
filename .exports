@@ -19,7 +19,7 @@ export LESS_TERMCAP_md="$ORANGE"
 export MANPAGER="less -X"
 
 # Needed for local Red5 installation
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
 export RED5_HOME=/Applications/red5-1.0.0
 
 # AWS Cli tools
@@ -34,7 +34,6 @@ export PATH=$PATH:$EC2_HOME/bin
 export PATH=$PATH:$AWS_ELB_HOME/bin
 export PATH=$PATH:$AWS_CLOUDWATCH_HOME/bin
 export PATH=$PATH:$AWS_AUTO_SCALING_HOME/bin
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 export EC2_URL=https://eu-west-1.ec2.amazonaws.com
 
 export AWS_RDS_HOME=/Applications/AWS/RDSCli-1.6.001
