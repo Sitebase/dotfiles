@@ -173,5 +173,5 @@ function tailc() {
 # Also accepts parameters
 function t() {
 	[ -f phpunit.xml ] && phpunit $@
-	[ -f runner.js ] && phantomjs runner.js index.html?testNumber=@$
+	[ -f runner.js ] && phantomjs runner.js index.html?testNumber=$@
 }
