@@ -16,4 +16,4 @@ fi
 unset doIt
 source ~/.bash_profile
 
-exit 1
+exit 0
