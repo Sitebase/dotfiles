@@ -175,3 +175,7 @@ function t() {
 	[ -f phpunit.xml ] && phpunit $@
 	[ -f runner.js ] && phantomjs runner.js index.html?testNumber=$@
 }
+function tl() {
+	[ -f phpunit.xml ] && watch -n 3 --color "phpunit $@"
+	[ -f runner.js ] && watch -n 3 --color "phantomjs runner.js index.html?testNumber=$@"
+}
