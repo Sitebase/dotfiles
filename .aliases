@@ -155,6 +155,7 @@ alias ssh.ci="ssh -i ~/.ssh/BBBXtemp.pem bitnami@ci.bubobox.com"
 alias admin="cd ~/Code/bubobox/admin/"
 alias widget="cd ~/Code/bubobox/widget/"
 alias api="cd ~/Code/bubobox/api/"
+alias bubobox="edit ~/Code/bubobox/admin/admin.sublime-project ~/Code/bubobox/widget/widget.sublime-project"
 
 # Open apps
 alias mail="open -a Mail"
