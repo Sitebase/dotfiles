@@ -95,7 +95,13 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
 
-colorscheme jellybeans
+" This makes sure the themes work like they should when using vim
+" in a terminal
+if $TERM == "xterm-256color"
+  set t_Co=256
+endif
+
+colorscheme desert
 
 let g:switch_custom_definitions =
     \ [
