@@ -94,3 +94,17 @@ if has("autocmd")
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
+
+colorscheme jellybeans
+
+let g:switch_custom_definitions =
+    \ [
+    \   ['foo', 'bar', 'baz'],
+    \	['true', 'false'],
+    \	['print_r', 'var_dump'],
+    \ ]
+
+nnoremap - :Switch<cr>
+
+call pathogen#runtime_append_all_bundles()
+map <C-n> :NERDTreeToggle<CR>
