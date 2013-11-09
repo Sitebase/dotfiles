@@ -101,7 +101,7 @@ if $TERM == "xterm-256color"
   set t_Co=256
 endif
 
-colorscheme desert
+colorscheme molokai
 
 let g:switch_custom_definitions =
     \ [
