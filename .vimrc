@@ -114,3 +114,7 @@ nnoremap - :Switch<cr>
 
 call pathogen#runtime_append_all_bundles()
 map <C-n> :NERDTreeToggle<CR>
+
+" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
+map <space> /
+map <c-space> ?
