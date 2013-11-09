@@ -28,6 +28,9 @@ alias gd="git diff"
 alias gb="git branch"
 alias gl='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 
+# Download all files in an online index of page
+alias download="wget -r --no-parent --reject 'index.html*'"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
