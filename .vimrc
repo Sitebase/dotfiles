@@ -41,8 +41,9 @@ set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-set list
+"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+"set list
+set nolist " hide hidden character because this seems to make the code less readable 
 " Highlight searches
 set hlsearch
 " Ignore case of searches
@@ -163,7 +164,7 @@ set autoindent
 " in specific filetypes, not generally
 " http://vim.wikia.com/wiki/Indenting_source_code
 "set smartindent
-set tabstop=2 " set tab character to N characters
+set tabstop=4 " set tab character to N characters
 set softtabstop=2 " let backspace delete indent
 set expandtab " turn tabs into whitespace
 set shiftwidth=2 " indent width for autoindent
