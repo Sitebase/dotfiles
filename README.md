@@ -1,5 +1,13 @@
 # Mathias’s dotfiles
 
+## VIM
+
+### Powerline
+
+To use airline make sure you use a powerline compatible font for your terminal.
+If prefer: Inconsolata-dz for Powerline
+https://github.com/Lokaltog/powerline-fonts
+
 ## Installation
 
 ### Using Git and the bootstrap script
