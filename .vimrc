@@ -125,8 +125,11 @@ map <c-space> ?
 " Always show the status line
 set laststatus=2
 
+
+let g:Powerline_symbols = 'fancy'
+
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l/%L
+"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l/%L 
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -139,4 +142,30 @@ function! HasPaste()
     en
     return ''
 endfunction
+
+
+" this is from vimrc_example.vim
+" When editing a file, always jump to the last known cursor position.
+autocmd BufReadPost *
+  \ if line("'\"") > 1 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
+
+
+" Indent stuff
+" http://www.jonlee.ca/hacking-vim-the-ultimate-vimrc/
+" http://www.cs.swarthmore.edu/help/vim/indenting.html
+set autoindent
+" Generally, 'smartindent' or 'cindent' should only be set manually if you're
+" not satisfied with how file type based indentation works. 
+" looks like smartindent was deprecated for cindent, and should be activated
+" in specific filetypes, not generally
+" http://vim.wikia.com/wiki/Indenting_source_code
+"set smartindent
+set tabstop=2 " set tab character to N characters
+set softtabstop=2 " let backspace delete indent
+set expandtab " turn tabs into whitespace
+set shiftwidth=2 " indent width for autoindent
+set backspace=indent,eol,start
+" configure filetype specific stuff in ftplugin/filetype.vim
 

@@ -1,0 +1,3 @@
+[submodule ".vim/bundle/comments"]
+	path = .vim/bundle/comments
+	url = https://github.com/vim-scripts/comments.vim.git
