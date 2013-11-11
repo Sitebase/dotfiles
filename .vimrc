@@ -98,7 +98,7 @@ endif
 " This makes sure the themes work like they should when using vim
 " in a terminal
 if $TERM == "xterm-256color"
-  set t_Co=256
+  	set t_Co=256
 endif
 
 colorscheme molokai
@@ -108,6 +108,7 @@ let g:switch_custom_definitions =
     \   ['foo', 'bar', 'baz'],
     \	['true', 'false'],
     \	['print_r', 'var_dump'],
+    \	['private', 'protected', 'public'],
     \ ]
 
 nnoremap - :Switch<cr>
@@ -168,4 +169,8 @@ set expandtab " turn tabs into whitespace
 set shiftwidth=2 " indent width for autoindent
 set backspace=indent,eol,start
 " configure filetype specific stuff in ftplugin/filetype.vim
+
+
+let g:airline_powerline_fonts = 1
+
 
