@@ -34,6 +34,7 @@ Below is an example of a .path file that will add the utils folder to PATH.
 ```bash
 # PATH additions
 export PATH="~/utils:$PATH"
+```
 
 ## Thanks to…
 
