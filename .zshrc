@@ -42,6 +42,13 @@ ZSH_THEME="agnoster"
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
 
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{aliases,functions,extra}; do
+	[ -r "$file" ] && source "$file"
+done
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
