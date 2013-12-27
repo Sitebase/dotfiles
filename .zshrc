@@ -45,7 +45,7 @@ ZSH_THEME="agnoster"
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{aliases,functions,extra}; do
+for file in ~/.{exports,aliases,functions,extra}; do
 	[ -r "$file" ] && source "$file"
 done
 
@@ -58,7 +58,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/Developer/SDKs/android-sdk-mac_x86/tools:~~/.sitebase/tools:/User/wim/Scripts:/Developer/usr/bin:/Applications/red5-1.0.0/src:/Applications/MAMP/bin/php/php5.3.6/bin:/Applications/MAMP/bin/php/php5.3.6/lib/php/phing/tasks/ext:/Applications/MAMP/bin/php/php5.3.6/lib/php:/Applications/MAMP/Library/bin:/Applications/Adobe\ Flash\ Builder\ 4/sdks/3.5.0/bin:/Applications/phonegap-phonegap-2dbbdab/lib/ios/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
