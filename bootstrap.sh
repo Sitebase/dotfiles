@@ -2,7 +2,7 @@
 cd "$(dirname "${BASH_SOURCE}")"
 git pull
 function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
+	rsync --exclude "oh-my-zsh/" --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
 	echo "Synced dotfiles with: "`pwd`
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
