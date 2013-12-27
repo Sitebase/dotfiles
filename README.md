@@ -6,12 +6,12 @@ The bootstrapper script will pull in the latest version and copy the files to yo
 
 ```
 # bash
-git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/sitebase/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 ```
 # zsh
-git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && ./bootstrap.sh
+git clone https://github.com/sitebase/dotfiles.git && cd dotfiles && ./bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
