@@ -23,6 +23,7 @@ alias oo="open ."
 # Git
 alias gc="git commit -m"
 alias ga="git add"
+alias gac="git add . && git commit -m"
 alias gs="git status" 
 alias gd="git diff"
 alias gp="git push"
