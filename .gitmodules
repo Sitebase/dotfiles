@@ -4,9 +4,6 @@
 [submodule "Command-T"]
 	path = .vim/bundle/Command-T
 	url = https://github.com/wincent/Command-T.git
-[submodule "molokai"]
-	path = .vim/bundle/molokai
-	url = https://github.com/tomasr/molokai.git
 [submodule "nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -25,3 +22,6 @@
 [submodule "vim-surround"]
 	path = .vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/molokai"]
+	path = .vim/bundle/molokai
+	url = https://github.com/tomasr/molokai.git
