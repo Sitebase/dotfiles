@@ -26,6 +26,10 @@ plugins=(osx)
 
 source $ZSH/oh-my-zsh.sh
 
+# Better up arrow auto complete
+[[ -n "${key[Up]}"      ]] && bindkey  "${key[Up]}"      history-beginning-search-backward
+[[ -n "${key[Down]}"    ]] && bindkey  "${key[Down]}"    history-beginning-search-forward
+
 # User configuration
 
 export PATH=$HOME/bin:/Developer/SDKs/android-sdk-mac_x86/tools:~~/.sitebase/tools:/User/wim/Scripts:/Developer/usr/bin:/Applications/red5-1.0.0/src:/Applications/MAMP/bin/php/php5.3.6/bin:/Applications/MAMP/bin/php/php5.3.6/lib/php/phing/tasks/ext:/Applications/MAMP/bin/php/php5.3.6/lib/php:/Applications/MAMP/Library/bin:/Applications/Adobe\ Flash\ Builder\ 4/sdks/3.5.0/bin:/Applications/phonegap-phonegap-2dbbdab/lib/ios/bin:$PATH
