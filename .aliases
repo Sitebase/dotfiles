@@ -19,6 +19,7 @@ alias m="mate ."
 alias edit="sublime"
 alias o="open"
 alias oo="open ."
+alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
 # Git
 alias gc="git commit -m"
