@@ -1,6 +1,6 @@
 # Add `~/bin` to the `$PATH`
 #export PATH="$HOME/bin:$PATH"
-PATH=$PATH:/Developer/SDKs/android-sdk-mac_x86/tools:~~/.sitebase/tools:/User/wim/Scripts:/Developer/usr/bin:/Applications/red5-1.0.0/src:/Applications/MAMP/bin/php/php5.3.6/bin:/Applications/MAMP/bin/php/php5.3.6/lib/php/phing/tasks/ext:/Applications/MAMP/bin/php/php5.3.6/lib/php:/Applications/MAMP/Library/bin:/Applications/Adobe\ Flash\ Builder\ 4/sdks/3.5.0/bin:/Applications/phonegap-phonegap-2dbbdab/lib/ios/bin; 
+PATH=$PATH:/Developer/SDKs/android-sdk-mac_x86/tools:~~/.sitebase/tools:/User/wim/Scripts:/Developer/usr/bin:/Applications/red5-1.0.0/src:/Applications/MAMP/bin/php/php5.3.6/bin:/Applications/MAMP/bin/php/php5.3.6/lib/php/phing/tasks/ext:/Applications/MAMP/bin/php/php5.3.6/lib/php:/Applications/MAMP/Library/bin:/Applications/Adobe\ Flash\ Builder\ 4/sdks/3.5.0/bin:/Applications/phonegap-phonegap-2dbbdab/lib/ios/bin:/opt/local/bin; 
 export PATH
 
 # Load the shell dotfiles, and then some:
