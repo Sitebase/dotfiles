@@ -51,3 +51,6 @@ export APPLICATION_ENV=development
 export PHP_COMMAND=/usr/bin/php
 export PHING_HOME=/Applications/MAMP/bin/php/php5.3.6/lib/php/phing
 export PHP_CLASSPATH=/Applications/MAMP/bin/php/php5.3.6/lib/php/phing:/Applications/MAMP/bin/php/php5.3.6/lib/php/:/Applications/MAMP/bin/php/php5.3.6/lib/php/phing/tasks/ext
+
+# Closure compiler
+export CLOSURE_PATH=/Users/wim/Applications/closure-compiler
