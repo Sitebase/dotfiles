@@ -47,6 +47,9 @@ export PATH=$PATH:$AWS_EBT_HOME/bin
 # BuboBox dev
 export APPLICATION_ENV=development
 
+# Brew includes
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+
 # Phing
 export PHP_COMMAND=/usr/bin/php
 export PHING_HOME=/Applications/MAMP/bin/php/php5.3.6/lib/php/phing
