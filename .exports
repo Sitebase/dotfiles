@@ -50,10 +50,18 @@ export APPLICATION_ENV=development
 # Brew includes
 export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 
+# Home bin
+export PATH=$PATH:~/bin
+
 # Phing
 export PHP_COMMAND=/usr/bin/php
 export PHING_HOME=/Applications/MAMP/bin/php/php5.3.6/lib/php/phing
 export PHP_CLASSPATH=/Applications/MAMP/bin/php/php5.3.6/lib/php/phing:/Applications/MAMP/bin/php/php5.3.6/lib/php/:/Applications/MAMP/bin/php/php5.3.6/lib/php/phing/tasks/ext
 
 # Closure compiler
-export CLOSURE_PATH=/usr/local/opt/closure-compiler/libexec
+export CLOSURE_PATH=/usr/local/Cellar/closure-compiler/20141023/libexec
+
+# Docker
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/wim/.boot2docker/certs/boot2docker-vm

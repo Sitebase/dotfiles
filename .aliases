@@ -159,7 +159,7 @@ alias browserstack="java -jar ~/Applications/BrowserStackTunnel.jar"
 alias randpass="openssl rand -base64 12" # generate random password
 alias mysql.localhost="mysql -proot -u root -h localhost --port 3306 bubobox_test"
 alias deploy='phing -f heroku.xml deploy'
-alias proxystart="ssh -L 3128:localhost:8888 -N -i ~/.ssh/tinyproxy.pem ubuntu@54.64.217.251"
+alias proxystart="ssh -L 3128:localhost:8888 -N -i ~/.ssh/tinyproxy.pem ubuntu@54.64.253.134"
 
 # SSH Machines
 alias ssh.ci="ssh -i ~/.ssh/BBBXtemp.pem bitnami@ci.bubobox.com"
