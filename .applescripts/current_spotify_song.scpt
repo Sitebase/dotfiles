@@ -14,6 +14,6 @@ if (processList contains "Spotify") is true then
 			set col to "green"
 		end if
 		
-		return "#[fg=" & col & "]" & symbol & " #[fg=colour30]" & artistName & " - " & trackName & " #[fg=colour74]| "
+		return artistName & " - " & trackName
 	end tell
 end if
