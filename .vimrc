@@ -158,6 +158,8 @@ let g:switch_custom_definitions =
     \ [
     \   ['foo', 'bar', 'baz'],
     \	['true', 'false'],
+    \	['on', 'off'],
+    \	['enable', 'disable'],
     \	['print_r', 'var_dump'],
     \	['private', 'protected', 'public'],
     \ ]
