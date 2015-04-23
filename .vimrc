@@ -1,3 +1,31 @@
+" Vundle
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tomasr/molokai'
+Plugin 'AndrewRadev/switch.vim'
+Plugin 'bling/vim-airline'
+Plugin 'wincent/Command-T'
+Plugin 'tpope/vim-surround'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'msanders/snipmate.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'terryma/vim-multiple-cursors'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+"Vundle end
+
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -137,11 +165,12 @@ let g:switch_custom_definitions =
 nnoremap - :Switch<cr>
 
 call pathogen#runtime_append_all_bundles()
-map <C-n> :NERDTreeToggle<CR>
+map <C-l> :NERDTreeToggle<CR>
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 map <c-space> ?
+imap jj <Esc>
 
 """"""""""""""""""""""""""""""
 " => Status line
