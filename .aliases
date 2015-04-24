@@ -112,33 +112,13 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
 
-# Disable Spotlight
-alias spotoff="sudo mdutil -a -i off"
-# Enable Spotlight
-alias spoton="sudo mdutil -a -i on"
-
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 	alias "$method"="lwp-request -m '$method'"
 done
 
-# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 7'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
-
 # Development helpers
-alias incolor="perl -pe 's/.*\bNotice\b.*/\e[0;32;40m$&\e[0m/g; s/.*\bFatal\b.*/\e[0;31;40m$&\e[0m/g; s/.*\bParse\b.*/\e[0;36;40m$&\e[0m/g; s/.*\bWarning\b.*/\e[0;33;40m$&\e[0m/g; s/.*\bCatchable\b.*/\e[0;35;40m$&\e[0m/g; s/.*\bNOTICE\b.*/\e[0;32;40m$&\e[0m/g; s/.*\bALERT\b.*/\e[0;37;41m$&\e[0m/g; s/.*\bEMERG\b.*/\e[0;36;40m$&\e[0m/g; s/.*\bWARN\b.*/\e[0;33;40m$&\e[0m/g; s/.*\bINFO\b.*/\e[0;35;40m$&\e[0m/g; s/.*\bDEBUG\b.*/\e[0;34;40m$&\e[0m/g; s/.*\bERR\b.*/\e[0;31;40m$&\e[0m/g'"
-alias selenium="java -jar /usr/local/bin/selenium-server-standalone-2.25.0.jar"
-alias phpini="$EDITOR /Applications/MAMP/bin/php/php5.3.6/conf/php.ini"
-alias browserstack="java -jar ~/Applications/BrowserStackTunnel.jar"
 alias randpass="openssl rand -base64 12" # generate random password
-alias mysql.localhost="mysql -proot -u root -h localhost --port 3306 bubobox_test"
-alias deploy='phing -f heroku.xml deploy'
-alias proxystart="ssh -L 3128:localhost:8888 -N -i ~/.ssh/tinyproxy.pem ubuntu@54.64.253.134"
-
-# SSH Machines
-alias ssh.ci="ssh -i ~/.ssh/BBBXtemp.pem bitnami@ci.bubobox.com"
 
 # Projects (maybe this should be in a git ignored files because this is different for every user)
 alias admin="cd ~/Code/bubobox/admin/"
@@ -147,8 +127,6 @@ alias api="cd ~/Code/bubobox/api/"
 alias bubobox="edit ~/Code/bubobox/admin/admin.sublime-project ~/Code/bubobox/widget/widget.sublime-project"
 
 # Open apps
-alias mail="open -a Mail"
-alias mamp="open -a MAMP"
 alias chrome="open -a Chrome"
 alias browser="open -a Chrome"
 alias firefox="open -a Firefox"
