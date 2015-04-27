@@ -12,6 +12,9 @@ ZSH_THEME="agnoster"
 # much faster.
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+# Disable auto titles in tmux windows
+DISABLE_AUTO_TITLE=true
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
