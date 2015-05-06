@@ -17,7 +17,7 @@ alias p="cd ~/Projects"
 alias h="history"
 alias j="jobs"
 alias v="vim"
-alias edit="subl"
+alias edit="reattach-to-user-namespace subl"
 alias o="open"
 alias oo="open ."
 
