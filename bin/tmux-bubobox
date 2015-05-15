@@ -1,0 +1,63 @@
+#!/bin/zsh                                                                                                   
+ 
+SESSIONNAME="bubobox"
+CODEFOLDER="~/Code/bubobox"
+tmux has-session -t $SESSIONNAME &> /dev/null
+ 
+if [ $? != 0 ] 
+ then
+
+    tmux new-session -s $SESSIONNAME -n main -d
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/bible && clear" C-m 
+    tmux split-window -h 
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/sandbox && clear" C-m 
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/sandbox && clear" C-m 
+
+    # admin pane
+   	tmux new-window  -t $SESSIONNAME -n admin
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/admin && clear" C-m 
+    tmux split-window -h 
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/admin && clear" C-m 
+
+    # widget pane
+    tmux new-window  -t $SESSIONNAME -n widget
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/widget && clear" C-m 
+    tmux split-window -h 
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/widget && clear" C-m 
+
+    # api pane
+    tmux new-window  -t $SESSIONNAME -n api
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/api && clear" C-m 
+    tmux split-window -h 
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/api && clear" C-m 
+
+    # devbox pane
+    tmux new-window  -t $SESSIONNAME -n devbox
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/devbox && clear" C-m 
+    tmux split-window -h 
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/devbox && clear" C-m 
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/devbox && tailc -f log/error.log" C-m 
+
+    # vision pane
+    tmux new-window  -t $SESSIONNAME -n vision
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/vision && clear" C-m 
+    tmux split-window -h 
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/vision && clear" C-m 
+
+    # templates pane
+    tmux new-window  -t $SESSIONNAME -n templates
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/templates && clear" C-m 
+    tmux split-window -h 
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/templates && clear" C-m 
+
+    # memes pane
+    tmux new-window  -t $SESSIONNAME -n memes
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/memes && clear" C-m 
+    tmux split-window -h 
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/memes && clear" C-m 
+
+fi
+ 
+tmux attach -t $SESSIONNAME
