@@ -12,7 +12,7 @@ if [ $? != 0 ]
     tmux split-window -h 
     tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/sandbox && clear" C-m 
     tmux split-window -v
-    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/sandbox && clear" C-m 
+    tmux send-keys -t $SESSIONNAME "cd ~/dotfiles && clear" C-m 
 
     # admin pane
    	tmux new-window  -t $SESSIONNAME -n admin
@@ -51,6 +51,18 @@ if [ $? != 0 ]
     tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/templates && clear" C-m 
     tmux split-window -h 
     tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/templates && clear" C-m 
+
+    # forwrd pane
+    tmux new-window  -t $SESSIONNAME -n forward
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/forward && clear" C-m 
+    tmux split-window -h 
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/forward && clear" C-m 
+
+    # portal pane
+    tmux new-window  -t $SESSIONNAME -n portal
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/portal && clear" C-m 
+    tmux split-window -h 
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/portal && clear" C-m 
 
     # memes pane
     tmux new-window  -t $SESSIONNAME -n memes
