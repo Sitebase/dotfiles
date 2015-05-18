@@ -116,6 +116,7 @@ alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Re
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 	alias "$method"="lwp-request -m '$method'"
 done
+alias FACEBOOK="curl -s -A 'facebookexternalhit/1.1 (+https://www.facebook.com/externalhit_uatext.php)' "
 
 # Development helpers
 alias randpass="openssl rand -base64 12" # generate random password
