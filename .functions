@@ -229,3 +229,6 @@ extract () {
        echo "'$1' is not a valid file"
    fi
 }
+
+encode64(){ echo -n $1 | base64 }
+decode64(){ echo -n $1 | base64 --decode }
