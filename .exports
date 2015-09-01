@@ -61,6 +61,9 @@ export PHP_CLASSPATH=/Applications/MAMP/bin/php/php5.3.6/lib/php/phing:/Applicat
 # Closure compiler
 export CLOSURE_PATH=/usr/local/Cellar/closure-compiler/20141023/libexec
 
+# Sprinter
+export SPRINTER_REPOS=~/dotfiles/bubobox-repos.txt
+
 # Docker
 export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://192.168.59.103:2376
