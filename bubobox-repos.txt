@@ -1,0 +1,36 @@
+bubobox/components
+bubobox/manage
+buobbox/api
+bubobox/admin
+
+# will only add the ones that are under active development otherwise
+# the sprinter tool will be too slow
+#bubobox/templates
+#bubobox/ci-base
+#bubobox/events
+#bubobox/bible
+#bubobox/vision
+#bubobox/presets
+#bubobox/bme-js
+#bubobox/widget
+#bubobox/logbox
+#bubobox/bbbx-base-node
+#bubobox/schema
+#bubobox/tinymce-variable
+#bubobox/guard
+#bubobox/concat-js
+#bubobox/portal
+#bubobox/nodex-bbbx-utils
+#bubobox/bot
+#bubobox/website
+#bubobox/memes
+#bubobox/doing-cli
+#bubobox/forward
+#bubobox/forward-js
+#bubobox/logbox-js
+#bubobox/tracker
+#bubobox/vulcano
+#bubobox/devbox
+#bubobox/worker
+#bubobox/stack
+#bubobox/red5
