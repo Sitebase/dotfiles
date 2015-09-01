@@ -183,7 +183,7 @@ function tl() {
 # Watch command that doesn't break colors
 # usage: watcher 4 'your command'
 function watcher()
-{ 
+{
   WATCHERTIME=$1
   WATCHERFILE=/tmp/watcher$$
   shift
@@ -230,5 +230,5 @@ extract () {
    fi
 }
 
-encode64(){ echo -n $1 | base64 }
-decode64(){ echo -n $1 | base64 --decode }
+#encode64(){ echo -n $1 | base64 }
+#decode64(){ echo -n $1 | base64 --decode }
