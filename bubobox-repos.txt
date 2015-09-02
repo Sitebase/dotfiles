@@ -1,6 +1,6 @@
 bubobox/components
 bubobox/manage
-buobbox/api
+bubobox/api
 bubobox/admin
 
 # will only add the ones that are under active development otherwise
