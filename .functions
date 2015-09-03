@@ -237,5 +237,5 @@ function sprint() {
     sprinter listIssues --milestone=sprint-$(date +"%Y-%V")
 }
 function mysprint() {
-    sprinter listIssues --milestone=sprint-$(date +"%Y-%V") --assignee=Sitebase
+    sprinter listIssues --milestone=sprint-$(date +"%Y-%V") --assignee="$GH_USERNAME"
 }
