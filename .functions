@@ -239,3 +239,6 @@ function sprint() {
 function mysprint() {
     sprinter listIssues --milestone=sprint-$(date +"%Y-%V") --assignee="$GH_USERNAME"
 }
+function devsprint() {
+    sprint | grep -B 1 -A 2 "in progress" | sed '/^--$/d'
+}
