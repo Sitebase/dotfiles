@@ -133,7 +133,3 @@ alias browser="open -a Chrome"
 alias firefox="open -a Firefox"
 alias safari="open -a Safari"
 alias transmit="open -a Transmit"
-
-# Sprinter
-alias sprint="sprinter listIssues --milestone="sprint-"$(date +"%Y-%V")"
-alias mysprint="sprinter listIssues --milestone="sprint-"$(date +"%Y-%V") --assignee=Sitebase"

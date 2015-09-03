@@ -232,3 +232,10 @@ extract () {
 
 #encode64(){ echo -n $1 | base64 }
 #decode64(){ echo -n $1 | base64 --decode }
+
+function sprint() {
+    sprinter listIssues --milestone=sprint-$(date +"%Y-%V")
+}
+function mysprint() {
+    sprinter listIssues --milestone=sprint-$(date +"%Y-%V") --assignee=Sitebase
+}
