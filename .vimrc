@@ -233,6 +233,11 @@ function! HasPaste()
     return ''
 endfunction
 
+" auto source .vimrc when changed
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
 
 " this is from vimrc_example.vim
 " When editing a file, always jump to the last known cursor position.
