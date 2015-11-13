@@ -251,10 +251,10 @@ set expandtab
 let g:airline_powerline_fonts = 1
 
 " search google for the item under the cursor
-" works but it rerenders vim screen black 
 nmap <leader>g :call Google()<CR>
 fun! Google()
     let keyword = expand("<cword>")
     let url = "http://www.google.com/search?q=" . keyword
     silent exec "!open '".url."'"
+	redraw!
 endfun
