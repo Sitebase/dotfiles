@@ -20,6 +20,8 @@ Plugin 'wincent/Command-T'
 Plugin 'tpope/vim-surround'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'msanders/snipmate.vim'
+
+" git integration
 Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-multiple-cursors'
 
