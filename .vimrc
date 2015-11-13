@@ -31,7 +31,7 @@ filetype plugin indent on    " required
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
-set clipboard=unnamed
+set clipboard=unnamedplus
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
@@ -156,6 +156,11 @@ endif
 
 colorscheme molokai
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Switch
 let g:switch_custom_definitions =
     \ [
     \   ['foo', 'bar', 'baz'],
@@ -169,12 +174,24 @@ let g:switch_custom_definitions =
 nnoremap - :Switch<cr>
 
 call pathogen#runtime_append_all_bundles()
-map <C-l> :NERDTreeToggle<CR>
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 map <c-space> ?
 imap jj <Esc>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" NERDTree
+map <C-l> :NERDTreeToggle<CR>
+
+" Command T
+map <C-t> :CommandT<CR>
+map <C-b> :CommandTBuffer<CR>
 
 """"""""""""""""""""""""""""""
 " => Status line
