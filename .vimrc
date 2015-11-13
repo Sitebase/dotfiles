@@ -174,6 +174,9 @@ let g:switch_custom_definitions =
 
 nnoremap - :Switch<cr>
 
+" CommandT
+set wildignore=.o,.obj,.git,node_modules/**,custom_modules/**,converage/**
+
 call pathogen#runtime_append_all_bundles()
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
