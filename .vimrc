@@ -14,6 +14,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tomasr/molokai'
 Plugin 'AndrewRadev/switch.vim'
 Plugin 'bling/vim-airline'
+
+" fuzzy finder like your are used to use in text editors like Atom or Sublime
 Plugin 'wincent/Command-T'
 Plugin 'tpope/vim-surround'
 Plugin 'editorconfig/editorconfig-vim'
@@ -71,7 +73,7 @@ set tabstop=2
 " Show “invisible” characters
 "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 "set list
-set nolist " hide hidden character because this seems to make the code less readable 
+set nolist " hide hidden character because this seems to make the code less readable
 " Highlight searches
 set hlsearch
 " Ignore case of searches
@@ -184,7 +186,7 @@ set laststatus=2
 let g:Powerline_symbols = 'fancy'
 
 " Format the status line
-"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l/%L 
+"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l/%L
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -212,7 +214,7 @@ autocmd BufReadPost *
 " http://www.cs.swarthmore.edu/help/vim/indenting.html
 set autoindent
 " Generally, 'smartindent' or 'cindent' should only be set manually if you're
-" not satisfied with how file type based indentation works. 
+" not satisfied with how file type based indentation works.
 " looks like smartindent was deprecated for cindent, and should be activated
 " in specific filetypes, not generally
 " http://vim.wikia.com/wiki/Indenting_source_code
@@ -226,5 +228,3 @@ set backspace=indent,eol,start
 
 
 let g:airline_powerline_fonts = 1
-
-
