@@ -156,6 +156,16 @@ endif
 
 colorscheme molokai
 
+" Commenting blocks of code.
+autocmd FileType c,cpp,java,scala,js,php let b:comment_leader = '// '
+autocmd FileType sh,ruby,python   let b:comment_leader = '# '
+autocmd FileType conf,fstab       let b:comment_leader = '# '
+autocmd FileType tex              let b:comment_leader = '% '
+autocmd FileType mail             let b:comment_leader = '> '
+autocmd FileType vim              let b:comment_leader = '" '
+noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -229,23 +239,22 @@ autocmd BufReadPost *
   \   exe "normal! g`\"" |
   \ endif
 
-
-" Indent stuff
-" http://www.jonlee.ca/hacking-vim-the-ultimate-vimrc/
-" http://www.cs.swarthmore.edu/help/vim/indenting.html
-set autoindent
-" Generally, 'smartindent' or 'cindent' should only be set manually if you're
-" not satisfied with how file type based indentation works.
-" looks like smartindent was deprecated for cindent, and should be activated
-" in specific filetypes, not generally
-" http://vim.wikia.com/wiki/Indenting_source_code
-"set smartindent
-set tabstop=4 " set tab character to N characters
-set softtabstop=2 " let backspace delete indent
-set expandtab " turn tabs into whitespace
-set shiftwidth=2 " indent width for autoindent
-set backspace=indent,eol,start
-" configure filetype specific stuff in ftplugin/filetype.vim
-
+" indent
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
 
 let g:airline_powerline_fonts = 1
+
+" search google for the item under the cursor
+" works but it rerenders vim screen black 
+nmap <leader>g :call Google()<CR>
+fun! Google()
+    let keyword = expand("<cword>")
+    let url = "http://www.google.com/search?q=" . keyword
+    silent exec "!open '".url."'"
+endfun
