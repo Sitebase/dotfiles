@@ -11,15 +11,11 @@ alias home="~"
 alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
 
-# alias g="git "
-alias h="history"
-alias j="jobs"
-alias v="vim"
-alias edit="reattach-to-user-namespace subl"
-alias o="open"
+# General
+alias edit="atom"
 alias oo="open ."
+alias dotfiles="atom ~/dotfiles/"
 
 # Git
 alias gc="git commit -m"
