@@ -130,6 +130,9 @@ set incsearch     " show search matches as you type
 " this line enables loading plugins and settings based on file types
 filetype plugin indent on
 
+" open config
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
 " Strip trailing whitespace (,ss)
 function! StripWhitespace()
 	let save_cursor = getpos(".")
