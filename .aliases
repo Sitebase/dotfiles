@@ -17,6 +17,10 @@ alias edit="atom"
 alias oo="open ."
 alias dotfiles="atom ~/dotfiles/"
 
+# fix ctrl+s no remap in tmux
+# @see http://vim.wikia.com/wiki/Map_Ctrl-S_to_save_current_or_new_files
+alias vim="stty stop '' -ixoff; vim"
+
 # Git
 alias gc="git commit -m"
 alias gco="git checkout"
