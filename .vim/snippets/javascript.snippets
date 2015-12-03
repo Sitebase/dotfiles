@@ -6,6 +6,20 @@ snippet memoize
 # Button
 snippet Button
 	<Button onClick={this._on${1:Click}}>${2:label}</Button>${3}
+# Log
+snippet log
+	console.log(${1:'hello world'});${2}
+# ES2015 function
+snippet function
+	${1:functionName}(${2:argument})
+	{
+		${3:// code}
+	}${4}
+# ES2015 this binded function
+snippet bfunction
+	${1:functionName} = (${2:argument}) => {
+		${3:// code}
+	}${4}
 # Split element
 snippet splitit
 	<div className="row">
