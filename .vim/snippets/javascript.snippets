@@ -13,9 +13,9 @@ snippet log
 snippet constructor
 	constructor(${1:props}) {
 		super(props);
-		this.state({
+		this.state = {
 			${2:// state properties}
-		});
+		};
 	}${3}
 # ES2015 function
 snippet function
