@@ -9,6 +9,14 @@ snippet Button
 # Log
 snippet log
 	console.log(${1:'hello world'});${2}
+# ES2015 react constructor
+snippet constructor
+	constructor(${1:props}) {
+		super(props);
+		this.state({
+			${2:// state properties}
+		});
+	}${3}
 # ES2015 function
 snippet function
 	${1:functionName}(${2:argument})
