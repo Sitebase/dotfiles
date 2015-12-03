@@ -13,6 +13,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 
 # General
+alias tmux="tmux -2"
 alias edit="vim"
 alias oo="open ."
 alias dotfiles="cd ~/dotfiles/ && edit ."
