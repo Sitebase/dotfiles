@@ -123,6 +123,7 @@ alias FACEBOOK="curl -s -A 'facebookexternalhit/1.1 (+https://www.facebook.com/e
 alias randpass="openssl rand -base64 12" # generate random password
 
 # Projects (maybe this should be in a git ignored files because this is different for every user)
+alias errors="tailc -f ~/Code/bubobox/api/src/application/logs/* ~/Code/bubobox/admin/src/application/logs/* Code/bubobox/devbox/log/error.log"
 alias admin="cd ~/Code/bubobox/admin/"
 alias widget="cd ~/Code/bubobox/widget/"
 alias api="cd ~/Code/bubobox/api/"
