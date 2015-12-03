@@ -180,6 +180,7 @@ let g:switch_custom_definitions =
     \ [
     \	['true', 'false'],
     \	['let', 'const'],
+    \	['left', 'center', 'right'],
     \	['TRUE', 'FALSE'],
     \	['on', 'off'],
     \	['enable', 'disable'],
