@@ -190,7 +190,7 @@ nnoremap - :Switch<cr>
 
 " CommandT
 set wildignore=.o,.obj,.git,node_modules/**,custom_modules/**,converage/**
-let g:CommandTHighlightColor='LightBlue' " fix low contrast in highlight
+let g:CommandTHighlightColor='IncSearch' " fix low contrast in highlight
 
 call pathogen#runtime_append_all_bundles()
 
