@@ -18,6 +18,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'pthk/vim-luna'
 " Plugin 'tpope/vim-surround'
 " Plugin 'AndrewRadev/switch.vim'
 " Plugin 'terryma/vim-multiple-cursors'
@@ -224,7 +225,6 @@ let g:user_emmet_mode='a' " enable in all modes
 set laststatus=2
 
 
-let g:Powerline_symbols = 'fancy'
 
 " Format the status line
 "set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l/%L
@@ -264,6 +264,10 @@ set shiftwidth=4
 set expandtab
 
 let g:airline_powerline_fonts = 1
+let g:Powerline_symbols = 'fancy'
+let g:airline_theme='luna'
+let g:airline#extensions#tabline#enabled = 1
+set timeoutlen=50
 
 " search google for the item under the cursor
 nmap <leader>g :call Google()<CR>
