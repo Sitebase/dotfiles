@@ -267,7 +267,6 @@ let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
 let g:airline_theme='luna'
 let g:airline#extensions#tabline#enabled = 1
-set timeoutlen=50
 
 " search google for the item under the cursor
 nmap <leader>g :call Google()<CR>
