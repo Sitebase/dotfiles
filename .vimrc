@@ -5,25 +5,23 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'tomasr/molokai'
-Plugin 'AndrewRadev/switch.vim'
 Plugin 'bling/vim-airline'
-
-" fuzzy finder like your are used to use in text editors like Atom or Sublime
 Plugin 'wincent/Command-T'
-Plugin 'tpope/vim-surround'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'msanders/snipmate.vim'
-
-" git integration
+Plugin 'mattn/emmet-vim'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'terryma/vim-multiple-cursors'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'edkolev/tmuxline.vim'
+" Plugin 'tpope/vim-surround'
+" Plugin 'AndrewRadev/switch.vim'
+" Plugin 'terryma/vim-multiple-cursors'
+" Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -154,7 +152,12 @@ if $TERM == "xterm-256color"
   	set t_Co=256
 endif
 
+set background=dark
+let g:molokai_original = 1
+let g:rehash256 = 1
 colorscheme molokai
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
 
 " Commenting blocks of code.
 autocmd FileType c,cpp,java,scala,js,php let b:comment_leader = '// '
@@ -173,7 +176,6 @@ noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 " Switch
 let g:switch_custom_definitions =
     \ [
-    \   ['foo', 'bar', 'baz'],
     \	['true', 'false'],
     \	['TRUE', 'FALSE'],
     \	['on', 'off'],
@@ -195,8 +197,9 @@ map <c-space> ?
 imap jj <Esc>
 
 " ctrl+s to save file
-nmap <c-s> :w<cr>
-imap <c-s> <esc>:w<cr>a
+" qq to quit file
+map ss :w<cr>
+map qq :q<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -210,6 +213,9 @@ map <C-l> :NERDTreeToggle<CR>
 " Command T
 map <C-t> :CommandT<CR>
 map <C-b> :CommandTBuffer<CR>
+
+" Emmet
+let g:user_emmet_mode='a' " enable in all modes
 
 """"""""""""""""""""""""""""""
 " => Status line
