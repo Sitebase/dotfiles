@@ -13,6 +13,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 
 # General
+alias vim="/usr/local/Cellar/vim/7.4.826/bin/vim"
 alias tmux="tmux -2"
 alias edit="vim"
 alias oo="open ."
