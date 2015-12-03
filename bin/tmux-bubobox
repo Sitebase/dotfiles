@@ -52,11 +52,12 @@ if [ $? != 0 ]
 
     # devbox pane
     tmux new-window  -t $SESSIONNAME -n devbox
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/devbox && vim ." C-m
+    tmux split-window -v
     tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/devbox && clear" C-m
     tmux split-window -h
     tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/devbox && clear" C-m
-    tmux split-window -v
-    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/devbox && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
 
     # vision pane
     tmux new-window  -t $SESSIONNAME -n vision
