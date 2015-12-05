@@ -1,5 +1,6 @@
 " Plugins {{{
 
+set nocompatible              " be iMproved, required"
 filetype off                  " required for Vundle to work
 
 " set the runtime path to include Vundle and initialize
