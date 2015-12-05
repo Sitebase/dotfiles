@@ -1,6 +1,6 @@
-" Vundle
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" Plugins {{{
+
+filetype off                  " required for Vundle to work
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -32,10 +32,10 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 "Vundle end
 
-" Make Vim more useful
-set nocompatible
-" Use the OS clipboard by default (on versions compiled with `+clipboard`)
-set clipboard=
+" }}}
+
+set nocompatible                    " we don't have to be compatible with vi
+set clipboard=                      " use the OS clipboard
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
@@ -307,3 +307,5 @@ fun! Google()
     silent exec "!open '".url."'"
 	redraw!
 endfun
+
+" vim:foldmethod=marker:foldlevel=0
