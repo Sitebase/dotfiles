@@ -11,7 +11,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
-Plugin 'wincent/Command-T'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'msanders/snipmate.vim'
 Plugin 'mattn/emmet-vim'
@@ -22,6 +21,7 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'pthk/vim-luna'
 Plugin 'kana/vim-smartinput'
 Plugin 'scrooloose/syntastic'
+Plugin 'kien/ctrlp.vim'
 " Plugin 'ervandew/supertab'
 " Plugin 'tpope/vim-surround'
 " Plugin 'AndrewRadev/switch.vim'
@@ -172,9 +172,7 @@ let g:switch_custom_definitions =
 
 nnoremap - :Switch<cr>
 
-" CommandT
 set wildignore=.o,.obj,.git,node_modules/**,custom_modules/**,converage/**
-let g:CommandTHighlightColor='IncSearch' " fix low contrast in highlight
 
 " Syntastic
 function! ESLintArgs()
@@ -215,9 +213,9 @@ nnoremap <CR> :noh<CR><CR>
 " NERDTree
 map <C-l> :NERDTreeToggle<CR>
 
-" Command T
-map <C-t> :CommandT<CR>
-map <C-b> :CommandTBuffer<CR>
+" CtrlP
+map <C-p> :CtrlP<CR>
+map <C-o> :CtrlPBuffer<CR>
 
 " Emmet
 let g:user_emmet_mode='a' " enable in all modes
