@@ -34,96 +34,79 @@ filetype plugin indent on    " required
 
 " }}}
 
+" General settings {{{
+
+syntax on                           " Enable syntax highlighting
+let mapleader=","                   " Change mapleader
+
 set nocompatible                    " we don't have to be compatible with vi
 set clipboard=                      " use the OS clipboard
-" Enhance command-line completion
-set wildmenu
-" Allow cursor keys in insert mode
-set esckeys
-" Allow backspace in insert mode
-set backspace=indent,eol,start
-" Optimize for fast terminal connections
-set ttyfast
-" Add the g flag to search/replace by default
-set gdefault
-" Use UTF-8 without BOM
-set encoding=utf-8 nobomb
-" Change mapleader
-let mapleader=","
-" Don’t add empty newlines at the end of files
-set binary
-set noeol
-" Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
+set wildmenu                        " Enhance command-line completion
+set esckeys                         " Allow cursor keys in insert mode
+set backspace=indent,eol,start      " Allow backspace in insert mode
+set ttyfast                         " Optimize for fast terminal connections
+set gdefault                        " Add the g flag to search/replace by default
+set encoding=utf-8 nobomb           " Use UTF-8 without BOM
+set binary                          " needed for `noeol` to work @see http://stackoverflow.com/questions/16222530/why-do-i-need-vim-in-binary-mode-for-noeol-to-work  
+set noeol                           " Don’t add empty newlines at the end of files
+set modeline                        " Respect modeline in files
+set modelines=4
+set exrc                            " Enable per-directory .vimrc files  
+set secure                          " only allow secure commands in sources vimrcs
+set relativenumber                  " Enable relative line numbers 
+set number                          " in combinative with relative gives hybrid numbers
+set cursorline                      " Highlight current line
+set nolist                          " hide hidden character because this seems to make the code less readable
+set hlsearch                        " Highlight searches
+set ignorecase                      " Ignore case of searches
+set incsearch                       " Highlight dynamically as pattern is typed
+set laststatus=2                    " Always show status line
+set mouse=a                         " Enable mouse in all modes
+set noerrorbells                    " Disable error bells
+set nostartofline                   " Don’t reset cursor to start of line when moving around.
+set ruler                           " Show the cursor position
+set shortmess=atI                   " Don’t show the intro message when starting Vim
+set showmode                        " Show the current mode
+set title                           " Show the filename in the window titlebar
+set showcmd                         " Show the (partial) command as it’s being typed
+set scrolloff=3                     " Start scrolling three lines before the horizontal window border
+set nowrap                          " don't wrap lines
+set tabstop=4                       " a tab is four spaces
+set autoindent                      " always set autoindenting on
+set copyindent                      " copy the previous indentation on autoindenting
+set shiftwidth=4                    " number of spaces to use for autoindenting
+set shiftround                      " use multiple of shiftwidth when indenting with '<' and '>'
+set showmatch                       " set show matching parenthesis
+set smarttab                        " insert tabs on the start of a line according to shiftwidth, not tabstop
+set colorcolumn=85                  " show line to help write shorter code lines
+
+" }}}
+
+" Directories {{{
+set backupdir=~/.vim/backups        " Centralize backups, swapfiles and undo history
 set directory=~/.vim/swaps
 if exists("&undodir")
 	set undodir=~/.vim/undo
 endif
+" }}}
 
-" Respect modeline in files
-set modeline
-set modelines=4
-" Enable per-directory .vimrc files and disable unsafe commands in them
-set exrc
-set secure
-" Enable relative line numbers in hybrid mode (show line number instead of 0)
-set relativenumber
-set number
-" Enable syntax highlighting
-syntax on
-" Highlight current line
-set cursorline
-" Make tabs as wide as two spaces
-set tabstop=2
-" Show “invisible” characters
-"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-"set list
-set nolist " hide hidden character because this seems to make the code less readable
-" Highlight searches
-set hlsearch
-" Ignore case of searches
-set ignorecase
-" Highlight dynamically as pattern is typed
-set incsearch
-" Always show status line
-set laststatus=2
-" Enable mouse in all modes
-set mouse=a
-" Disable error bells
-set noerrorbells
-" Don’t reset cursor to start of line when moving around.
-set nostartofline
-" Show the cursor position
-set ruler
-" Don’t show the intro message when starting Vim
-set shortmess=atI
-" Show the current mode
-set showmode
-" Show the filename in the window titlebar
-set title
-" Show the (partial) command as it’s being typed
-set showcmd
-" Start scrolling three lines before the horizontal window border
-set scrolloff=3
+" Theme {{{
 
+" This makes sure the themes work like they should when using vim
+" in a terminal
+if $TERM == "xterm-256color"
+  	set t_Co=256
+endif
 
-set nowrap        " don't wrap lines
-set tabstop=4     " a tab is four spaces
-set backspace=indent,eol,start
-" allow backspacing over everything in insert mode
-set autoindent    " always set autoindenting on
-set copyindent    " copy the previous indentation on autoindenting
-set shiftwidth=4  " number of spaces to use for autoindenting
-set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
-set showmatch     " set show matching parenthesis
-set ignorecase    " ignore case when searching
-set smartcase     " ignore case if search pattern is all lowercase,
-"    case-sensitive otherwise
-set smarttab      " insert tabs on the start of a line according to
-"    shiftwidth, not tabstop
-set hlsearch      " highlight search terms
-set incsearch     " show search matches as you type
-set colorcolumn=85 " show line to help write shorter code lines
+set background=dark
+let g:rehash256 = 1
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
+
+let g:molokai_original = 1
+colorscheme molokai
+
+" }}}
 
 " this line enables loading plugins and settings based on file types
 filetype plugin indent on
@@ -151,18 +134,6 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
 
-" This makes sure the themes work like they should when using vim
-" in a terminal
-if $TERM == "xterm-256color"
-  	set t_Co=256
-endif
-
-set background=dark
-let g:molokai_original = 1
-let g:rehash256 = 1
-colorscheme molokai
-highlight Normal ctermbg=NONE
-highlight nonText ctermbg=NONE
 
 " Commenting blocks of code.
 autocmd FileType c,cpp,java,scala,js,php let b:comment_leader = '// '
