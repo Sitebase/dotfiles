@@ -20,6 +20,8 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'pthk/vim-luna'
 Plugin 'kana/vim-smartinput'
+Plugin 'scrooloose/syntastic'
+" Plugin 'ervandew/supertab'
 " Plugin 'tpope/vim-surround'
 " Plugin 'AndrewRadev/switch.vim'
 " Plugin 'terryma/vim-multiple-cursors'
@@ -121,6 +123,7 @@ set smarttab      " insert tabs on the start of a line according to
 "    shiftwidth, not tabstop
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
+set colorcolumn=85 " show line to help write shorter code lines
 
 " this line enables loading plugins and settings based on file types
 filetype plugin indent on
@@ -194,6 +197,21 @@ nnoremap - :Switch<cr>
 set wildignore=.o,.obj,.git,node_modules/**,custom_modules/**,converage/**
 let g:CommandTHighlightColor='IncSearch' " fix low contrast in highlight
 
+" Syntastic
+function! ESLintArgs()
+    let rules = findfile('.eslintrc', '.;')
+    return rules != '' ? '--config ' . shellescape(fnamemodify(rules, ':p:h')) . '/.eslintrc': ''
+endfunction
+autocmd FileType javascript let b:syntastic_javascript_eslint_args = ESLintArgs()
+let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" SuperTab
+" let g:SuperTabDefaultCompletionType = "context" " fixes snipmate not working
+
 call pathogen#runtime_append_all_bundles()
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
@@ -205,6 +223,9 @@ imap jj <Esc>
 " qq to quit file
 map ss :w<cr>
 map qq :q<cr>
+
+" hit enter again to clear search highlight
+nnoremap <CR> :noh<CR><CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -221,6 +242,12 @@ map <C-b> :CommandTBuffer<CR>
 
 " Emmet
 let g:user_emmet_mode='a' " enable in all modes
+
+" Fugitive
+nmap <leader>gs :Gstatus<CR>
+nmap <leader>gc :Gcommit<CR>
+nmap <leader>gb :Gblame<CR>
+nmap <leader>gg :Gbrowse<CR>
 
 """"""""""""""""""""""""""""""
 " => Status line
@@ -273,7 +300,7 @@ let g:airline_theme='luna'
 let g:airline#extensions#tabline#enabled = 1
 
 " search google for the item under the cursor
-nmap <leader>g :call Google()<CR>
+nmap <leader>gf :call Google()<CR>
 fun! Google()
     let keyword = expand("<cword>")
     let url = "http://www.google.com/search?q=" . keyword
