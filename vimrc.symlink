@@ -15,14 +15,15 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'msanders/snipmate.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'                     " git integration
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'pthk/vim-luna'
+Plugin 'edkolev/tmuxline.vim'                   " copy airline look to tmux
+Plugin 'pthk/vim-luna'                          " airline theme I use 
 Plugin 'kana/vim-smartinput'
-Plugin 'scrooloose/syntastic'
-Plugin 'kien/ctrlp.vim'
-Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'scrooloose/syntastic'                   " linting and syntax checking
+Plugin 'kien/ctrlp.vim'                         " fuzzy find
+Plugin 'christoomey/vim-tmux-navigator'         " seamless vim/tmux pane navigation
+Plugin 'benmills/vimux'                         " run command in Vim pane
 " Plugin 'ervandew/supertab'
 " Plugin 'tpope/vim-surround'
 " Plugin 'AndrewRadev/switch.vim'
@@ -212,7 +213,7 @@ nnoremap <CR> :noh<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " NERDTree
-map <C-l> :NERDTreeToggle<CR>
+map <leader>l :NERDTreeToggle<CR>
 
 " CtrlP
 map <C-p> :CtrlP<CR>
@@ -226,6 +227,13 @@ nmap <leader>gs :Gstatus<CR>
 nmap <leader>gc :Gcommit<CR>
 nmap <leader>gb :Gblame<CR>
 nmap <leader>gg :Gbrowse<CR>
+
+" Tmux navigator
+nmap <Tab> :TmuxNavigateRight<CR>
+
+" Vimux
+nmap <leader>nt :call VimuxRunCommand("clear; npm test")<CR>
+nmap <leader>x :VimuxPromptCommand<CR>
 
 """"""""""""""""""""""""""""""
 " => Status line
