@@ -165,7 +165,7 @@ noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 
 " Switch
 let g:switch_custom_definitions =
-    \ [
+   \ [
     \	['true', 'false'],
     \	['let', 'const'],
     \	['left', 'center', 'right'],
@@ -222,6 +222,9 @@ nnoremap <CR> :noh<CR><CR>
 nmap <tab> :b#<cr>
 
 nnoremap ; :
+
+" space open/closes folds
+nnoremap <space> za
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
