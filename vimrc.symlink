@@ -12,19 +12,23 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'msanders/snipmate.vim'
 Plugin 'mattn/emmet-vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'          " needed for snipmate
+Plugin 'tomtom/tlib_vim'                        " needed for snipmate
+Plugin 'garbas/vim-snipmate'                    " snippets
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'                     " git integration
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'edkolev/tmuxline.vim'                   " copy airline look to tmux
-Plugin 'pthk/vim-luna'                          " airline theme I use 
+Plugin 'pthk/vim-luna'                          " airline theme I use
 Plugin 'kana/vim-smartinput'
 Plugin 'scrooloose/syntastic'                   " linting and syntax checking
 Plugin 'kien/ctrlp.vim'                         " fuzzy find
 Plugin 'christoomey/vim-tmux-navigator'         " seamless vim/tmux pane navigation
 Plugin 'benmills/vimux'                         " run command in Vim pane
-" Plugin 'ervandew/supertab'
+Plugin 'rking/ag.vim'                           " fast multiple file searching
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdcommenter'
 " Plugin 'tpope/vim-surround'
 " Plugin 'AndrewRadev/switch.vim'
 " Plugin 'terryma/vim-multiple-cursors'
@@ -57,13 +61,13 @@ set backspace=indent,eol,start      " Allow backspace in insert mode
 set ttyfast                         " Optimize for fast terminal connections
 set gdefault                        " Add the g flag to search/replace by default
 set encoding=utf-8 nobomb           " Use UTF-8 without BOM
-set binary                          " needed for `noeol` to work @see http://stackoverflow.com/questions/16222530/why-do-i-need-vim-in-binary-mode-for-noeol-to-work  
+set binary                          " needed for `noeol` to work @see http://stackoverflow.com/questions/16222530/why-do-i-need-vim-in-binary-mode-for-noeol-to-work
 set noeol                           " Don’t add empty newlines at the end of files
 set modeline                        " Respect modeline in files
 set modelines=4
-set exrc                            " Enable per-directory .vimrc files  
+set exrc                            " Enable per-directory .vimrc files
 set secure                          " only allow secure commands in sources vimrcs
-set relativenumber                  " Enable relative line numbers 
+set relativenumber                  " Enable relative line numbers
 set number                          " in combinative with relative gives hybrid numbers
 set cursorline                      " Highlight current line
 set nolist                          " hide hidden character because this seems to make the code less readable
@@ -188,8 +192,14 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" CtrlP
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|custom_modules\|coverage'
+
 " SuperTab
 " let g:SuperTabDefaultCompletionType = "context" " fixes snipmate not working
+
+" Silver searcher AG
+let g:ag_working_path_mode="r"
 
 call pathogen#runtime_append_all_bundles()
 
@@ -201,10 +211,17 @@ imap jj <Esc>
 " ctrl+s to save file
 " qq to quit file
 map ss :w<cr>
+map SS :w!<cr>
 map qq :q<cr>
+map QQ :q!<cr>
 
 " hit enter again to clear search highlight
 nnoremap <CR> :noh<CR><CR>
+
+" switch back to previous buffer
+nmap <tab> :b#<cr>
+
+nnoremap ; :
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -228,12 +245,12 @@ nmap <leader>gc :Gcommit<CR>
 nmap <leader>gb :Gblame<CR>
 nmap <leader>gg :Gbrowse<CR>
 
-" Tmux navigator
-nmap <Tab> :TmuxNavigateRight<CR>
-
 " Vimux
 nmap <leader>nt :call VimuxRunCommand("clear; npm test")<CR>
 nmap <leader>x :VimuxPromptCommand<CR>
+
+" Searching with AG
+nmap <leader>sc :execute "Ag " . expand("<cword>")<CR>
 
 """"""""""""""""""""""""""""""
 " => Status line
@@ -241,7 +258,15 @@ nmap <leader>x :VimuxPromptCommand<CR>
 " Always show the status line
 set laststatus=2
 
-
+" allows cursor change in tmux mode
+" gives a normal cursor instead of a block
+if exists('$TMUX')
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
 
 " Format the status line
 "set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l/%L
