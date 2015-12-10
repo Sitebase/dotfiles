@@ -19,7 +19,7 @@ Plugin 'garbas/vim-snipmate'                    " snippets
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'                     " git integration
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'edkolev/tmuxline.vim'                   " copy airline look to tmux
+" Plugin 'edkolev/tmuxline.vim'                   " copy airline look to tmux, only enable to generate tmux conf file
 Plugin 'pthk/vim-luna'                          " airline theme I use
 Plugin 'kana/vim-smartinput'
 Plugin 'scrooloose/syntastic'                   " linting and syntax checking
@@ -84,7 +84,7 @@ set showmode                        " Show the current mode
 set title                           " Show the filename in the window titlebar
 set showcmd                         " Show the (partial) command as it’s being typed
 set scrolloff=3                     " Start scrolling three lines before the horizontal window border
-set nowrap                          " don't wrap lines
+set wrap                            " wrap lines
 set tabstop=4                       " a tab is four spaces
 set autoindent                      " always set autoindenting on
 set copyindent                      " copy the previous indentation on autoindenting
@@ -121,6 +121,20 @@ let g:molokai_original = 1
 colorscheme molokai
 
 " }}}
+
+" Movement {{{
+
+" move vertically by visual line
+" fixes jump over wrapped lines
+nnoremap j gj
+nnoremap k gk
+
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+
+" }}}
+
 
 " this line enables loading plugins and settings based on file types
 filetype plugin indent on
@@ -246,6 +260,7 @@ let g:user_emmet_mode='a' " enable in all modes
 nmap <leader>gs :Gstatus<CR>
 nmap <leader>gc :Gcommit<CR>
 nmap <leader>gb :Gblame<CR>
+nmap <leader>gd :Gdiff<CR>
 nmap <leader>gg :Gbrowse<CR>
 
 " Vimux
