@@ -29,6 +29,8 @@ Plugin 'benmills/vimux'                         " run command in Vim pane
 Plugin 'rking/ag.vim'                           " fast multiple file searching
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'isRuslan/vim-es6'
+Plugin 'mxw/vim-jsx'
 " Plugin 'tpope/vim-surround'
 " Plugin 'AndrewRadev/switch.vim'
 " Plugin 'terryma/vim-multiple-cursors'
@@ -118,7 +120,7 @@ highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 
 let g:molokai_original = 1
-colorscheme monokai
+colorscheme molokai
 
 " }}}
 
@@ -215,7 +217,10 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|custom_modules\|covera
 " Silver searcher AG
 let g:ag_working_path_mode="r"
 
-call pathogen#runtime_append_all_bundles()
+" Vim JSX
+let g:jsx_ext_required = 0
+
+" call pathogen#runtime_append_all_bundles()
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
