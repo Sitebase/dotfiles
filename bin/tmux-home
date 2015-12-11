@@ -1,0 +1,31 @@
+#!/bin/zsh
+
+SESSIONNAME="home"
+CODEFOLDER="~/Code/home-server"
+SERVICESFOLDER="$CODEFOLDER/services"
+tmux has-session -t $SESSIONNAME &> /dev/null
+
+if [ $? != 0 ]
+ then
+
+    tmux new-session -s $SESSIONNAME -n main -d
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/ && ssh wim@server.lan && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/ && ssh wim@server.lan && clear" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/ && clear" C-m
+
+    # create a window for each service
+    for f in $(ls ~/Code/home-server/services); do
+        tmux new-window  -t $SESSIONNAME -n $f
+        tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/services/$f && clear" C-m
+        tmux split-window -v
+        tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/services/$f && clear" C-m
+        tmux split-window -h
+        tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/services/$f && clear" C-m
+        tmux resize-pane -t $SESSIONNAME -y 20
+    done
+
+fi
+
+tmux attach -t $SESSIONNAME
