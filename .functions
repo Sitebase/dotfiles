@@ -233,6 +233,11 @@ extract () {
 #encode64(){ echo -n $1 | base64 }
 #decode64(){ echo -n $1 | base64 --decode }
 
+function port()
+{
+    lsof -i :$1
+}
+
 function sprint() {
     sprinter listIssues --milestone=sprint-$(date +"%Y-%V")
 }
