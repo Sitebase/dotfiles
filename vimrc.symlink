@@ -54,6 +54,7 @@ filetype plugin indent on    " required
 
 syntax on                           " Enable syntax highlighting
 let mapleader=","                   " Change mapleader
+set timeoutlen=500
 
 set nocompatible                    " we don't have to be compatible with vi
 set clipboard=                      " use the OS clipboard
