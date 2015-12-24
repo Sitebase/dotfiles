@@ -221,6 +221,11 @@ let g:ag_working_path_mode="r"
 " Vim JSX
 let g:jsx_ext_required = 0
 
+" JSX code line length refactor
+" place next attribute on a new line
+" usage: @f
+let @f='f a'
+
 " call pathogen#runtime_append_all_bundles()
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
