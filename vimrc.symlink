@@ -281,7 +281,7 @@ nmap <leader>nt :call VimuxRunCommand("clear; npm test")<CR>
 nmap <leader>x :VimuxPromptCommand<CR>
 
 " Searching with AG
-nmap <leader>sc :execute "Ag " . expand("<cword>")<CR>
+nmap <leader>sc :execute "Ag -u " . expand("<cword>")<CR>
 
 " Vim navigator
 map <c-j> :TmuxNavigateDown<CR>
