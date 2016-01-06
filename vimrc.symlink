@@ -31,7 +31,8 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'isRuslan/vim-es6'
 Plugin 'mxw/vim-jsx'
-" Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 " Plugin 'AndrewRadev/switch.vim'
 " Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'terryma/vim-multiple-cursors'
@@ -208,6 +209,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_html_tidy_ignore_errors = [ '<script> proprietary attribute "async"'  ]
 
 " CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|custom_modules\|coverage'
