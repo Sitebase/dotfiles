@@ -33,7 +33,7 @@ Plugin 'isRuslan/vim-es6'
 Plugin 'mxw/vim-jsx'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
-" Plugin 'AndrewRadev/switch.vim'
+Plugin 'AndrewRadev/switch.vim'
 " Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'terryma/vim-multiple-cursors'
 
@@ -97,6 +97,7 @@ set shiftround                      " use multiple of shiftwidth when indenting 
 set showmatch                       " set show matching parenthesis
 set smarttab                        " insert tabs on the start of a line according to shiftwidth, not tabstop
 set colorcolumn=85                  " show line to help write shorter code lines
+set spell spelllang=en_us
 
 " }}}
 
@@ -177,6 +178,10 @@ autocmd FileType vim              let b:comment_leader = '" '
 noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
 noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 
+" the following line makes vim ignore camelCase and CamelCase words so they
+" are not highlighted as spelling mistakes
+autocmd Syntax * syn match CamelCase "\(\<\|_\)\%(\u\l*\)\{2,}\(\>\|_\)\|\<\%(\l\l*\)\%(\u\l*\)\{1,}\>" transparent containedin=.*Comment.*,.*String.*,VimwikiLink contains=@NoSpell contained")))"
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -192,6 +197,7 @@ let g:switch_custom_definitions =
     \	['enable', 'disable'],
     \	['print_r', 'var_dump'],
     \	['private', 'protected', 'public'],
+    \	['string', 'number', 'array', 'object'],
     \ ]
 
 nnoremap - :Switch<cr>
@@ -353,5 +359,11 @@ fun! Google()
     silent exec "!open '".url."'"
 	redraw!
 endfun
+
+" {{{ Color fine tune
+hi clear SpellBad
+hi SpellBad cterm=underline ctermfg=yellow
+hi ColorColumn ctermbg=black guibg=black
+" }}}
 
 " vim:foldmethod=marker:foldlevel=0
