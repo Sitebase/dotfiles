@@ -182,6 +182,14 @@ noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 " are not highlighted as spelling mistakes
 autocmd Syntax * syn match CamelCase "\(\<\|_\)\%(\u\l*\)\{2,}\(\>\|_\)\|\<\%(\l\l*\)\%(\u\l*\)\{1,}\>" transparent containedin=.*Comment.*,.*String.*,VimwikiLink contains=@NoSpell contained")))"
 
+" enable column on active window only to make the active
+" window more visible
+augroup BgHighlight
+    autocmd!
+    autocmd WinEnter * set colorcolumn=85 
+    autocmd WinLeave * set colorcolumn=0 
+augroup END
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -197,7 +205,7 @@ let g:switch_custom_definitions =
     \	['enable', 'disable'],
     \	['print_r', 'var_dump'],
     \	['private', 'protected', 'public'],
-    \	['string', 'number', 'array', 'object'],
+    \	['string', 'bool', 'number', 'array', 'object', 'oneOfType'],
     \ ]
 
 nnoremap - :Switch<cr>
@@ -221,11 +229,20 @@ let g:syntastic_auto_jump = 1
 " CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|custom_modules\|coverage'
 
+" without this option if you would open a file in a submodule. the next call
+" to ctrlp will only search in this submodule
+let g:ctrlp_working_path_mode = 0  
+
 " SuperTab
 " let g:SuperTabDefaultCompletionType = "context" " fixes snipmate not working
 
 " Silver searcher AG
-let g:ag_working_path_mode="r"
+" without this option if you would open a file in a submodule. the next call
+" to ctrlp will only search in this submodule
+let g:ag_working_path_mode = 0 
+
+" NerdCommenter
+let NERDSpaceDelims=1 " Add extra space otherwise eslint starts complaining about these lines 
 
 " Vim JSX
 let g:jsx_ext_required = 0
@@ -359,6 +376,7 @@ fun! Google()
     silent exec "!open '".url."'"
 	redraw!
 endfun
+
 
 " {{{ Color fine tune
 hi clear SpellBad
