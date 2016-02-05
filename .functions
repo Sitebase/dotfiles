@@ -238,6 +238,11 @@ function port()
     lsof -i :$1
 }
 
+function killport()
+{
+    kill $(sudo lsof -t -i:$1)
+}
+
 function sprint() {
     sprinter listIssues --milestone=sprint-$(date +"%Y-%V")
 }
