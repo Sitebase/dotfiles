@@ -27,13 +27,17 @@ done
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx)
+plugins=(osx autoenv)
 
 source $ZSH/oh-my-zsh.sh
 
 # Better up arrow auto complete
 [[ -n "${key[Up]}"      ]] && bindkey  "${key[Up]}"      history-beginning-search-backward
 [[ -n "${key[Down]}"    ]] && bindkey  "${key[Down]}"    history-beginning-search-forward
+
+# NVM setup
+export NVM_DIR="/Users/wim/.nvm"
+[ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Disable shared history in terminal sessions
 setopt no_share_history
