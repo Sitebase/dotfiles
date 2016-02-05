@@ -129,6 +129,7 @@ alias widget="cd ~/Code/bubobox/widget/"
 alias api="cd ~/Code/bubobox/api/"
 alias bubobox="edit ~/Code/bubobox/admin/admin.sublime-project ~/Code/bubobox/widget/widget.sublime-project"
 alias atom-bubobox="atom ~/Code/bubobox/api ~/Code/bubobox/manage ~/Code/bubobox/components ~/Code/bubobox/vision ~/Code/bubobox/admin"
+alias devbox="ssh -t dokku@dokku.dev.bubobox.com"
 
 # Open apps
 alias chrome="open -a Chrome"
