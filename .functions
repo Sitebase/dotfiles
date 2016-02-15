@@ -252,3 +252,7 @@ function mysprint() {
 function devsprint() {
     sprint | grep -B 1 -A 2 "in progress" | sed '/^--$/d'
 }
+
+function GETJSON() {
+    curl -s "$1" | python -mjson.tool
+}
