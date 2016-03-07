@@ -58,7 +58,7 @@ let mapleader=","                   " Change mapleader
 set timeoutlen=500
 
 set nocompatible                    " we don't have to be compatible with vi
-set clipboard=                      " use the OS clipboard
+set clipboard=unnamed               " use the OS clipboard
 set wildmenu                        " Enhance command-line completion
 set esckeys                         " Allow cursor keys in insert mode
 set backspace=indent,eol,start      " Allow backspace in insert mode
@@ -258,6 +258,14 @@ let @f='f a'
 map <space> /
 map <c-space> ?
 imap jj <Esc>
+
+" Map for copy and pasting using the system clipboard
+" register "* is on Vim mac the system clipboard
+" so you can use for example "*yy to yank the current line
+" to the system clipboard
+" these mapping make it possible to use visual mode selection
+" and hit ctrl-c to copy to the system clipboard
+vnoremap <C-c> "*y"
 
 " ctrl+s to save file
 " qq to quit file
