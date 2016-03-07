@@ -68,14 +68,23 @@ if [ $? != 0 ]
     tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/vision && clear" C-m
     tmux resize-pane -t $SESSIONNAME -y 20
 
-    # memes pane
-    tmux new-window  -t $SESSIONNAME -n memes
-    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/memes" C-m
+    # unity pane
+    tmux new-window  -t $SESSIONNAME -n unity
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/unity" C-m
     tmux split-window -v
-    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/memes && clear" C-m
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/unity && clear" C-m
     tmux split-window -h
-    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/memes && clear" C-m
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/unity && clear" C-m
     tmux resize-pane -t $SESSIONNAME -y 20
+
+    # memes pane
+    # tmux new-window  -t $SESSIONNAME -n memes
+    # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/memes" C-m
+    # tmux split-window -v
+    # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/memes && clear" C-m
+    # tmux split-window -h
+    # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/memes && clear" C-m
+    # tmux resize-pane -t $SESSIONNAME -y 20
 
     # templates pane
     tmux new-window  -t $SESSIONNAME -n templates
