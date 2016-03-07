@@ -2,3 +2,22 @@ snippet testje
 	<test id="${1:name}">
 		${2}
 	</test>
+snippet htmlbase
+	<!DOCTYPE html>
+	<html lang="en-US">
+		<head>
+			<meta charset="utf-8">
+			<title>${1:title}</title>
+			<link rel="stylesheet" href="style.css">
+		</head>
+		<body>
+			${0}
+			<script src="main.js"></script>
+		</body>
+	</html>
+snippet link
+	<link rel="stylesheet" href="${1:style.css}">
+snippet script
+	<script src="${1:main.js}"></script>
+snippet jquery
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>

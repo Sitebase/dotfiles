@@ -22,8 +22,7 @@ snippet constructor
 	}${3}
 # ES2015 function
 snippet function
-	${1:functionName}(${2:argument})
-	{
+	${1:functionName}(${2:argument}) {
 		${3:// code}
 	}${4}
 # ES2015 this binded function
@@ -39,7 +38,7 @@ snippet splitit
 	</div>${5}
 # React types
 snippet proptype
-	React.PropTypes.${1:string}
+	React.PropTypes.${1}
 # Boilerplate component
 snippet Component
 	'use strict';
@@ -67,3 +66,23 @@ snippet Component
 			);
 		}
 	}${6}
+# Import ES6
+snippet import
+	import ${1} from '${2}';
+# Small if
+snippet if
+	if(${1})
+		${2}
+# Full if
+snippet iff
+	if(${1}) {
+		${2}
+	}
+# if/else
+snippet ifelse
+	if(${1}) {
+		${2}
+	} else {
+		${3}
+	}
+
