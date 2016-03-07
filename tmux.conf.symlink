@@ -72,9 +72,12 @@ setw -g window-status-current-format "#[fg=colour81,bg=colour232,nobold,nounders
 
 # {{{ Clipboard support
 
+# Use vim keybindings in copy mode
+setw -g mode-keys vi
+
 set-option -g default-command "reattach-to-user-namespace -l zsh"
-bind C-v run "tmux set-buffer $(reattach-to-user-namespace pbpaste); tmux paste-buffer"
-bind C-c run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
+bind-key -t vi-copy v begin-selection
+bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
 
 # }}}
 
