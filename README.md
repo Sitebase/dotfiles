@@ -48,6 +48,7 @@ Add script to reinstall all my brew packages
 * wget
 * reattach-to-user-namespace
 * tmux
+* git-extras
 
 ## Thanks to…
 
