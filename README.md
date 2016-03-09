@@ -40,6 +40,15 @@ Below is an example of a .path file that will add the utils folder to PATH.
 export PATH="~/utils:$PATH"
 ```
 
+# Brew 
+
+Add script to reinstall all my brew packages
+
+* vim
+* wget
+* reattach-to-user-namespace
+* tmux
+
 ## Thanks to…
 
 * [Mathias Bynens](http://mathiasbynens.be/) for sharing his [amazing collection of dotfiles](https://github.com/mathiasbynens/dotfiles)
