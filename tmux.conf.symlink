@@ -5,10 +5,6 @@ set -g status-fg black
 set-option -g default-terminal "screen-256color"
 
 setw -g mode-keys vi
-setw -g mode-mouse on
-set-option -g mouse-select-pane on
-set-option -g mouse-resize-pane on
-set-option -g mouse-select-window on
 
 # disable auto window renames
 set-option -g allow-rename off

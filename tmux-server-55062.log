@@ -1,0 +1,653 @@
+1457513501.491894 server started, pid 55062
+1457513501.492000 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492007 cmdq 0x7fd30bc0e7d0: bind-key C-b send-prefix
+1457513501.492036 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492041 cmdq 0x7fd30bc0e7d0: bind-key C-o rotate-window
+1457513501.492052 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492056 cmdq 0x7fd30bc0e7d0: bind-key C-z suspend-client
+1457513501.492066 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492070 cmdq 0x7fd30bc0e7d0: bind-key Space next-layout
+1457513501.492080 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492083 cmdq 0x7fd30bc0e7d0: bind-key ! break-pane
+1457513501.492093 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492096 cmdq 0x7fd30bc0e7d0: bind-key " split-window
+1457513501.492106 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492110 cmdq 0x7fd30bc0e7d0: bind-key # list-buffers
+1457513501.492125 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492130 cmdq 0x7fd30bc0e7d0: bind-key $ command-prompt -I#S "rename-session '%%'"
+1457513501.492143 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492147 cmdq 0x7fd30bc0e7d0: bind-key % split-window -h
+1457513501.492160 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492165 cmdq 0x7fd30bc0e7d0: bind-key & confirm-before "-pkill-window #W? (y/n)" kill-window
+1457513501.492178 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492183 cmdq 0x7fd30bc0e7d0: bind-key ' command-prompt -pindex "select-window -t ':%%'"
+1457513501.492193 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492197 cmdq 0x7fd30bc0e7d0: bind-key ( switch-client -p
+1457513501.492208 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492212 cmdq 0x7fd30bc0e7d0: bind-key ) switch-client -n
+1457513501.492224 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492229 cmdq 0x7fd30bc0e7d0: bind-key , command-prompt -I#W "rename-window '%%'"
+1457513501.492238 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492242 cmdq 0x7fd30bc0e7d0: bind-key - delete-buffer
+1457513501.492253 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492257 cmdq 0x7fd30bc0e7d0: bind-key . command-prompt "move-window -t '%%'"
+1457513501.492267 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492271 cmdq 0x7fd30bc0e7d0: bind-key 0 select-window -t:=0
+1457513501.492281 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492285 cmdq 0x7fd30bc0e7d0: bind-key 1 select-window -t:=1
+1457513501.492295 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492299 cmdq 0x7fd30bc0e7d0: bind-key 2 select-window -t:=2
+1457513501.492309 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492313 cmdq 0x7fd30bc0e7d0: bind-key 3 select-window -t:=3
+1457513501.492323 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492327 cmdq 0x7fd30bc0e7d0: bind-key 4 select-window -t:=4
+1457513501.492337 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492341 cmdq 0x7fd30bc0e7d0: bind-key 5 select-window -t:=5
+1457513501.492351 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492355 cmdq 0x7fd30bc0e7d0: bind-key 6 select-window -t:=6
+1457513501.492365 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492369 cmdq 0x7fd30bc0e7d0: bind-key 7 select-window -t:=7
+1457513501.492382 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492386 cmdq 0x7fd30bc0e7d0: bind-key 8 select-window -t:=8
+1457513501.492395 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492400 cmdq 0x7fd30bc0e7d0: bind-key 9 select-window -t:=9
+1457513501.492409 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492413 cmdq 0x7fd30bc0e7d0: bind-key : command-prompt
+1457513501.492421 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492425 cmdq 0x7fd30bc0e7d0: bind-key ; last-pane
+1457513501.492433 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492437 cmdq 0x7fd30bc0e7d0: bind-key = choose-buffer
+1457513501.492451 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492455 cmdq 0x7fd30bc0e7d0: bind-key ? list-keys
+1457513501.492464 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492468 cmdq 0x7fd30bc0e7d0: bind-key D choose-client
+1457513501.492477 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492481 cmdq 0x7fd30bc0e7d0: bind-key L switch-client -l
+1457513501.492491 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492495 cmdq 0x7fd30bc0e7d0: bind-key M select-pane -M
+1457513501.492504 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492508 cmdq 0x7fd30bc0e7d0: bind-key [ copy-mode
+1457513501.492516 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492520 cmdq 0x7fd30bc0e7d0: bind-key ] paste-buffer
+1457513501.492528 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492532 cmdq 0x7fd30bc0e7d0: bind-key c new-window
+1457513501.492540 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492544 cmdq 0x7fd30bc0e7d0: bind-key d detach-client
+1457513501.492554 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492558 cmdq 0x7fd30bc0e7d0: bind-key f command-prompt "find-window '%%'"
+1457513501.492567 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492571 cmdq 0x7fd30bc0e7d0: bind-key i display-message
+1457513501.492579 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492583 cmdq 0x7fd30bc0e7d0: bind-key l last-window
+1457513501.492592 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492595 cmdq 0x7fd30bc0e7d0: bind-key m select-pane -m
+1457513501.492604 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492608 cmdq 0x7fd30bc0e7d0: bind-key n next-window
+1457513501.492617 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492621 cmdq 0x7fd30bc0e7d0: bind-key o select-pane -t:.+
+1457513501.492630 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492634 cmdq 0x7fd30bc0e7d0: bind-key p previous-window
+1457513501.492642 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492646 cmdq 0x7fd30bc0e7d0: bind-key q display-panes
+1457513501.492657 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492660 cmdq 0x7fd30bc0e7d0: bind-key r refresh-client
+1457513501.492669 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492672 cmdq 0x7fd30bc0e7d0: bind-key s choose-tree
+1457513501.492680 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492684 cmdq 0x7fd30bc0e7d0: bind-key t clock-mode
+1457513501.492692 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492695 cmdq 0x7fd30bc0e7d0: bind-key w choose-window
+1457513501.492706 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492711 cmdq 0x7fd30bc0e7d0: bind-key x confirm-before "-pkill-pane #P? (y/n)" kill-pane
+1457513501.492720 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492724 cmdq 0x7fd30bc0e7d0: bind-key z resize-pane -Z
+1457513501.492734 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492738 cmdq 0x7fd30bc0e7d0: bind-key { swap-pane -U
+1457513501.492747 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492751 cmdq 0x7fd30bc0e7d0: bind-key } swap-pane -D
+1457513501.492760 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492764 cmdq 0x7fd30bc0e7d0: bind-key ~ show-messages
+1457513501.492773 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492777 cmdq 0x7fd30bc0e7d0: bind-key PPage copy-mode -u
+1457513501.492787 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492792 cmdq 0x7fd30bc0e7d0: bind-key -r Up select-pane -U
+1457513501.492803 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492807 cmdq 0x7fd30bc0e7d0: bind-key -r Down select-pane -D
+1457513501.492817 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492822 cmdq 0x7fd30bc0e7d0: bind-key -r Left select-pane -L
+1457513501.492832 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492836 cmdq 0x7fd30bc0e7d0: bind-key -r Right select-pane -R
+1457513501.492847 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492856 cmdq 0x7fd30bc0e7d0: bind-key M-1 select-layout even-horizontal
+1457513501.492866 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492870 cmdq 0x7fd30bc0e7d0: bind-key M-2 select-layout even-vertical
+1457513501.492880 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492884 cmdq 0x7fd30bc0e7d0: bind-key M-3 select-layout main-horizontal
+1457513501.492894 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492898 cmdq 0x7fd30bc0e7d0: bind-key M-4 select-layout main-vertical
+1457513501.492908 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492912 cmdq 0x7fd30bc0e7d0: bind-key M-5 select-layout tiled
+1457513501.492924 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492928 cmdq 0x7fd30bc0e7d0: bind-key M-n next-window -a
+1457513501.492937 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492941 cmdq 0x7fd30bc0e7d0: bind-key M-o rotate-window -D
+1457513501.492950 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492954 cmdq 0x7fd30bc0e7d0: bind-key M-p previous-window -a
+1457513501.492965 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492969 cmdq 0x7fd30bc0e7d0: bind-key -r M-Up resize-pane -U 5
+1457513501.492982 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.492986 cmdq 0x7fd30bc0e7d0: bind-key -r M-Down resize-pane -D 5
+1457513501.492998 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.493002 cmdq 0x7fd30bc0e7d0: bind-key -r M-Left resize-pane -L 5
+1457513501.493014 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.493019 cmdq 0x7fd30bc0e7d0: bind-key -r M-Right resize-pane -R 5
+1457513501.493030 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.493034 cmdq 0x7fd30bc0e7d0: bind-key -r C-Up resize-pane -U
+1457513501.493045 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.493049 cmdq 0x7fd30bc0e7d0: bind-key -r C-Down resize-pane -D
+1457513501.493060 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.493064 cmdq 0x7fd30bc0e7d0: bind-key -r C-Left resize-pane -L
+1457513501.493075 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.493079 cmdq 0x7fd30bc0e7d0: bind-key -r C-Right resize-pane -R
+1457513501.493092 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.493097 cmdq 0x7fd30bc0e7d0: bind-key -n MouseDown1Pane select-pane -t=; send-keys -M
+1457513501.493111 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.493115 cmdq 0x7fd30bc0e7d0: bind-key -n MouseDrag1Border resize-pane -M
+1457513501.493128 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.493132 cmdq 0x7fd30bc0e7d0: bind-key -n MouseDown1Status select-window -t=
+1457513501.493150 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.493159 cmdq 0x7fd30bc0e7d0: bind-key -n MouseDrag1Pane if -Ft= #{mouse_any_flag} "if -Ft= "#{pane_in_mode}" "copy-mode -M" "send-keys -M"" "copy-mode -M"
+1457513501.493173 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=-1
+1457513501.493177 cmdq 0x7fd30bc0e7d0: bind-key -n MouseDown3Pane select-pane -mt=
+1457513501.493342 socket path /private/var/folders/4v/p6708ywd3yq2tntkqzc2ctb40000gn/T/tmux-501/default
+1457513501.493504 new client 7
+1457513501.493569 loading /Users/wim/.tmux.conf
+1457513501.493592 /Users/wim/.tmux.conf: # {{{ Settings
+1457513501.493596 /Users/wim/.tmux.conf: 
+1457513501.493600 /Users/wim/.tmux.conf: set -g status-bg blue
+1457513501.493611 /Users/wim/.tmux.conf: set -g status-fg black
+1457513501.493619 /Users/wim/.tmux.conf: set-option -g default-terminal "screen-256color"
+1457513501.493629 /Users/wim/.tmux.conf: 
+1457513501.493632 /Users/wim/.tmux.conf: setw -g mode-keys vi
+1457513501.493640 /Users/wim/.tmux.conf: 
+1457513501.493644 /Users/wim/.tmux.conf: # disable auto window renames
+1457513501.493647 /Users/wim/.tmux.conf: set-option -g allow-rename off
+1457513501.493655 /Users/wim/.tmux.conf: 
+1457513501.493659 /Users/wim/.tmux.conf: # allow vi cursor move with vi key bindings
+1457513501.493662 /Users/wim/.tmux.conf: set-window-option -g mode-keys vi
+1457513501.493677 /Users/wim/.tmux.conf: 
+1457513501.493681 /Users/wim/.tmux.conf: # }}}
+1457513501.493684 /Users/wim/.tmux.conf: 
+1457513501.493687 /Users/wim/.tmux.conf: # {{{ Vim/Tmux integration
+1457513501.493691 /Users/wim/.tmux.conf: 
+1457513501.493694 /Users/wim/.tmux.conf: # Smart pane switching with awareness of vim splits
+1457513501.493698 /Users/wim/.tmux.conf: # See: https://github.com/christoomey/vim-tmux-navigator
+1457513501.493702 /Users/wim/.tmux.conf: is_vim='echo "#{pane_current_command}" | grep -iqE "(^|\\/)g?(view|n?vim?x?)(diff)?$"'
+1457513501.493726 /Users/wim/.tmux.conf: bind -n C-h if-shell "$is_vim" "send-keys C-h" "select-pane -L"
+1457513501.493740 /Users/wim/.tmux.conf: bind -n C-j if-shell "$is_vim" "send-keys C-j" "select-pane -D"
+1457513501.493754 /Users/wim/.tmux.conf: bind -n C-k if-shell "$is_vim" "send-keys C-k" "select-pane -U"
+1457513501.493765 /Users/wim/.tmux.conf: bind -n C-l if-shell "$is_vim" "send-keys C-l" "select-pane -R"
+1457513501.493775 /Users/wim/.tmux.conf: bind -n C-\\ if-shell "$is_vim" "send-keys C-\\\\" "select-pane -l"
+1457513501.493786 /Users/wim/.tmux.conf: 
+1457513501.493790 /Users/wim/.tmux.conf: # }}}
+1457513501.493793 /Users/wim/.tmux.conf: 
+1457513501.493796 /Users/wim/.tmux.conf: # {{{ Active window style
+1457513501.493799 /Users/wim/.tmux.conf: 
+1457513501.493803 /Users/wim/.tmux.conf: set -g pane-border-style fg=magenta
+1457513501.493812 /Users/wim/.tmux.conf: set -g pane-active-border-style fg=red
+1457513501.493820 /Users/wim/.tmux.conf: set -g pane-active-border-style bg=red
+1457513501.493829 /Users/wim/.tmux.conf: 
+1457513501.493832 /Users/wim/.tmux.conf: # }}}
+1457513501.493835 /Users/wim/.tmux.conf: 
+1457513501.493838 /Users/wim/.tmux.conf: # {{{ Bindings
+1457513501.493841 /Users/wim/.tmux.conf: 
+1457513501.493845 /Users/wim/.tmux.conf: # How to use
+1457513501.493848 /Users/wim/.tmux.conf: # ctrl+<leader> ctrl+<binding>
+1457513501.493851 /Users/wim/.tmux.conf: 
+1457513501.493855 /Users/wim/.tmux.conf: # Ctrl-R: Reload tmux config
+1457513501.493859 /Users/wim/.tmux.conf: bind . source-file ~/.tmux.conf \\; display-message "Configuration reloaded"
+1457513501.493871 /Users/wim/.tmux.conf: 
+1457513501.493874 /Users/wim/.tmux.conf: # Ctrl-leader Ctrl-0
+1457513501.493878 /Users/wim/.tmux.conf: bind 0 clock-mode
+1457513501.493884 /Users/wim/.tmux.conf: 
+1457513501.493887 /Users/wim/.tmux.conf: # }}}
+1457513501.493890 /Users/wim/.tmux.conf: 
+1457513501.493894 /Users/wim/.tmux.conf: # {{{ Status bar
+1457513501.493897 /Users/wim/.tmux.conf: 
+1457513501.493900 /Users/wim/.tmux.conf: 
+1457513501.493903 /Users/wim/.tmux.conf: set -g status-left-attr "none"
+1457513501.493912 /Users/wim/.tmux.conf: setw -g window-status-fg "colour253"
+1457513501.493920 /Users/wim/.tmux.conf: setw -g window-status-attr "bold"
+1457513501.493931 /Users/wim/.tmux.conf: setw -g window-status-activity-bg "colour81"
+1457513501.493940 /Users/wim/.tmux.conf: setw -g window-status-activity-attr "none"
+1457513501.493948 /Users/wim/.tmux.conf: setw -g window-status-activity-fg "colour253"
+1457513501.493956 /Users/wim/.tmux.conf: setw -g window-status-separator ""
+1457513501.493964 /Users/wim/.tmux.conf: setw -g window-status-bg "colour81"
+1457513501.493974 /Users/wim/.tmux.conf: set -g status-left "#[fg=colour232,bg=colour81,bold] #S #[fg=colour81,bg=colour81,nobold,nounderscore,noitalics]\356\202\260"
+1457513501.493988 /Users/wim/.tmux.conf: set -g status-right "#[fg=colour234,bg=colour81,nobold,nounderscore,noitalics]\356\202\262#[fg=colour253,bg=colour234,bold] #(/usr/bin/osascript ~/.applescripts/current_spotify_song.scpt) "
+1457513501.494004 /Users/wim/.tmux.conf: setw -g window-status-format "#[fg=colour232,bg=colour81,bold] #I \356\202\261#[fg=colour232,bg=colour81,bold] #W "
+1457513501.494020 /Users/wim/.tmux.conf: setw -g window-status-current-format "#[fg=colour81,bg=colour232,nobold,nounderscore,noitalics]\356\202\260#[fg=colour253,bg=colour232] #I \356\202\261#[fg=colour253,bg=colour232] #W #[fg=colour232,bg=colour81,nobold,nounderscore,noitalics]\356\202\260"
+1457513501.494043 /Users/wim/.tmux.conf: 
+1457513501.494046 /Users/wim/.tmux.conf: # }}}
+1457513501.494049 /Users/wim/.tmux.conf: 
+1457513501.494053 /Users/wim/.tmux.conf: # {{{ Clipboard support
+1457513501.494056 /Users/wim/.tmux.conf: 
+1457513501.494060 /Users/wim/.tmux.conf: # Use vim keybindings in copy mode
+1457513501.494063 /Users/wim/.tmux.conf: setw -g mode-keys vi
+1457513501.494071 /Users/wim/.tmux.conf: 
+1457513501.494074 /Users/wim/.tmux.conf: set-option -g default-command "reattach-to-user-namespace -l zsh"
+1457513501.494085 /Users/wim/.tmux.conf: bind-key -t vi-copy v begin-selection
+1457513501.494094 /Users/wim/.tmux.conf: bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
+1457513501.494103 /Users/wim/.tmux.conf: 
+1457513501.494107 /Users/wim/.tmux.conf: # }}}
+1457513501.494110 /Users/wim/.tmux.conf: 
+1457513501.494113 /Users/wim/.tmux.conf: # vim:foldmethod=marker:foldlevel=0
+1457513501.494130 continuing cmdq 0x7fd30bc12c10: flags=0, client=-1
+1457513501.494136 cmdq 0x7fd30bc12c10: set-option -g status-bg blue
+1457513501.494167 cmdq 0x7fd30bc12c10: set-option -g status-fg black
+1457513501.494175 cmdq 0x7fd30bc12c10: set-option -g default-terminal screen-256color
+1457513501.494189 cmdq 0x7fd30bc12c10: set-window-option -g mode-keys vi
+1457513501.494202 cmdq 0x7fd30bc12c10: set-option -g allow-rename off
+1457513501.494209 cmdq 0x7fd30bc12c10: set-window-option -g mode-keys vi
+1457513501.494217 cmdq 0x7fd30bc12c10: bind-key -n C-h if-shell "echo "#{pane_current_command}" | grep -iqE "(^|\\/)g?(view|n?vim?x?)(diff)?$"" "send-keys C-h" "select-pane -L"
+1457513501.494228 cmdq 0x7fd30bc12c10: bind-key -n C-j if-shell "echo "#{pane_current_command}" | grep -iqE "(^|\\/)g?(view|n?vim?x?)(diff)?$"" "send-keys C-j" "select-pane -D"
+1457513501.494237 cmdq 0x7fd30bc12c10: bind-key -n C-k if-shell "echo "#{pane_current_command}" | grep -iqE "(^|\\/)g?(view|n?vim?x?)(diff)?$"" "send-keys C-k" "select-pane -U"
+1457513501.494246 cmdq 0x7fd30bc12c10: bind-key -n C-l if-shell "echo "#{pane_current_command}" | grep -iqE "(^|\\/)g?(view|n?vim?x?)(diff)?$"" "send-keys C-l" "select-pane -R"
+1457513501.494255 cmdq 0x7fd30bc12c10: bind-key -n C-\\ if-shell "echo "#{pane_current_command}" | grep -iqE "(^|\\/)g?(view|n?vim?x?)(diff)?$"" "send-keys C-\\" "select-pane -l"
+1457513501.494263 cmdq 0x7fd30bc12c10: set-option -g pane-border-style fg=magenta
+1457513501.494273 cmdq 0x7fd30bc12c10: set-option -g pane-active-border-style fg=red
+1457513501.494281 cmdq 0x7fd30bc12c10: set-option -g pane-active-border-style bg=red
+1457513501.494290 cmdq 0x7fd30bc12c10: bind-key . source-file /Users/wim/.tmux.conf ; display-message "Configuration reloaded"
+1457513501.494301 cmdq 0x7fd30bc12c10: bind-key 0 clock-mode
+1457513501.494308 cmdq 0x7fd30bc12c10: set-option -g status-left-attr none
+1457513501.494316 cmdq 0x7fd30bc12c10: set-window-option -g window-status-fg colour253
+1457513501.494327 cmdq 0x7fd30bc12c10: set-window-option -g window-status-attr bold
+1457513501.494335 cmdq 0x7fd30bc12c10: set-window-option -g window-status-activity-bg colour81
+1457513501.494342 cmdq 0x7fd30bc12c10: set-window-option -g window-status-activity-attr none
+1457513501.494349 cmdq 0x7fd30bc12c10: set-window-option -g window-status-activity-fg colour253
+1457513501.494356 cmdq 0x7fd30bc12c10: set-window-option -g window-status-separator 
+1457513501.494363 cmdq 0x7fd30bc12c10: set-window-option -g window-status-bg colour81
+1457513501.494371 cmdq 0x7fd30bc12c10: set-option -g status-left "#[fg=colour232,bg=colour81,bold] #S #[fg=colour81,bg=colour81,nobold,nounderscore,noitalics]\356\202\260"
+1457513501.494381 cmdq 0x7fd30bc12c10: set-option -g status-right "#[fg=colour234,bg=colour81,nobold,nounderscore,noitalics]\356\202\262#[fg=colour253,bg=colour234,bold] #(/usr/bin/osascript ~/.applescripts/current_spotify_song.scpt) "
+1457513501.494389 cmdq 0x7fd30bc12c10: set-window-option -g window-status-format "#[fg=colour232,bg=colour81,bold] #I \356\202\261#[fg=colour232,bg=colour81,bold] #W "
+1457513501.494399 cmdq 0x7fd30bc12c10: set-window-option -g window-status-current-format "#[fg=colour81,bg=colour232,nobold,nounderscore,noitalics]\356\202\260#[fg=colour253,bg=colour232] #I \356\202\261#[fg=colour253,bg=colour232] #W #[fg=colour232,bg=colour81,nobold,nounderscore,noitalics]\356\202\260"
+1457513501.494413 cmdq 0x7fd30bc12c10: set-window-option -g mode-keys vi
+1457513501.494420 cmdq 0x7fd30bc12c10: set-option -g default-command "reattach-to-user-namespace -l zsh"
+1457513501.494436 cmdq 0x7fd30bc12c10: bind-key -t vi-copy v begin-selection
+1457513501.494454 cmdq 0x7fd30bc12c10: bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
+1457513501.494459 unref client 7 (2 references)
+1457513501.494469 event dispatch enter
+1457513501.494605 got 100 from client 7
+1457513501.494613 got 101 from client 7
+1457513501.494616 got 102 from client 7
+1457513501.494619 got 103 from client 7
+1457513501.494626 event dispatch exit
+1457513501.494629 event dispatch enter
+1457513501.494660 got 104 from client 7
+1457513501.494664 got 107 from client 7
+1457513501.494667 got 105 from client 7
+1457513501.494671 got 105 from client 7
+1457513501.494675 got 105 from client 7
+1457513501.494679 got 105 from client 7
+1457513501.494682 got 105 from client 7
+1457513501.494686 got 105 from client 7
+1457513501.494690 got 105 from client 7
+1457513501.494693 got 105 from client 7
+1457513501.494697 got 105 from client 7
+1457513501.494701 got 105 from client 7
+1457513501.494705 got 105 from client 7
+1457513501.494708 got 105 from client 7
+1457513501.494712 got 105 from client 7
+1457513501.494715 got 105 from client 7
+1457513501.494719 got 105 from client 7
+1457513501.494723 got 105 from client 7
+1457513501.494726 got 105 from client 7
+1457513501.494730 got 105 from client 7
+1457513501.494733 got 105 from client 7
+1457513501.494737 got 105 from client 7
+1457513501.494741 got 105 from client 7
+1457513501.494744 got 105 from client 7
+1457513501.494748 got 105 from client 7
+1457513501.494751 got 105 from client 7
+1457513501.494755 got 105 from client 7
+1457513501.494758 got 105 from client 7
+1457513501.494762 got 105 from client 7
+1457513501.494765 got 105 from client 7
+1457513501.494769 got 105 from client 7
+1457513501.494772 got 105 from client 7
+1457513501.494776 got 105 from client 7
+1457513501.494780 got 105 from client 7
+1457513501.494783 got 105 from client 7
+1457513501.494787 got 105 from client 7
+1457513501.494790 got 105 from client 7
+1457513501.494794 got 105 from client 7
+1457513501.494797 got 105 from client 7
+1457513501.494801 got 105 from client 7
+1457513501.494805 got 105 from client 7
+1457513501.494808 got 105 from client 7
+1457513501.494812 got 105 from client 7
+1457513501.494815 got 105 from client 7
+1457513501.494819 got 105 from client 7
+1457513501.494822 got 105 from client 7
+1457513501.494826 got 105 from client 7
+1457513501.494829 got 105 from client 7
+1457513501.494833 got 105 from client 7
+1457513501.494837 got 105 from client 7
+1457513501.494840 got 105 from client 7
+1457513501.494844 got 105 from client 7
+1457513501.494847 got 105 from client 7
+1457513501.494851 got 105 from client 7
+1457513501.494855 got 105 from client 7
+1457513501.494858 got 105 from client 7
+1457513501.494862 got 105 from client 7
+1457513501.494865 got 105 from client 7
+1457513501.494869 got 105 from client 7
+1457513501.494872 got 105 from client 7
+1457513501.494876 got 105 from client 7
+1457513501.494879 got 105 from client 7
+1457513501.494883 got 105 from client 7
+1457513501.494886 got 105 from client 7
+1457513501.494890 got 105 from client 7
+1457513501.494893 got 105 from client 7
+1457513501.494897 got 105 from client 7
+1457513501.494900 got 105 from client 7
+1457513501.494904 got 105 from client 7
+1457513501.494907 got 105 from client 7
+1457513501.494911 got 105 from client 7
+1457513501.494914 got 106 from client 7
+1457513501.496878 got 200 from client 7
+1457513501.496893 continuing cmdq 0x7fd30bc0e7d0: flags=0, client=7
+1457513501.496898 cmdq 0x7fd30bc0e7d0: new-session
+1457513501.496909 new term: xterm-256color
+1457513501.497235 xterm-256color override: XT 
+1457513501.497243 xterm-256color override: Ms \033]52;%p1%s;%p2%s\a
+1457513501.497257 xterm-256color override: Cs \033]12;%p1%s\a
+1457513501.497261 xterm-256color override: Cr \033]112\a
+1457513501.497264 xterm-256color override: Ss \033[%p1%d q
+1457513501.497268 xterm-256color override: Se \033[2 q
+1457513501.497312 new key \033Oo: 0x103c (KP/)
+1457513501.497317 new key \033Oj: 0x103d (KP*)
+1457513501.497320 new key \033Om: 0x103e (KP-)
+1457513501.497323 new key \033Ow: 0x103f (KP7)
+1457513501.497326 new key \033Ox: 0x1040 (KP8)
+1457513501.497328 new key \033Oy: 0x1041 (KP9)
+1457513501.497331 new key \033Ok: 0x1042 (KP+)
+1457513501.497334 new key \033Ot: 0x1043 (KP4)
+1457513501.497336 new key \033Ou: 0x1044 (KP5)
+1457513501.497339 new key \033Ov: 0x1045 (KP6)
+1457513501.497342 new key \033Oq: 0x1046 (KP1)
+1457513501.497345 new key \033Or: 0x1047 (KP2)
+1457513501.497347 new key \033Os: 0x1048 (KP3)
+1457513501.497350 new key \033OM: 0x1049 (KPEnter)
+1457513501.497353 new key \033Op: 0x104a (KP0)
+1457513501.497356 new key \033On: 0x104b (KP.)
+1457513501.497359 new key \033OA: 0x1038 (Up)
+1457513501.497361 new key \033OB: 0x1039 (Down)
+1457513501.497364 new key \033OC: 0x103b (Right)
+1457513501.497367 new key \033OD: 0x103a (Left)
+1457513501.497370 new key \033[A: 0x1038 (Up)
+1457513501.497373 new key \033[B: 0x1039 (Down)
+1457513501.497375 new key \033[C: 0x103b (Right)
+1457513501.497378 new key \033[D: 0x103a (Left)
+1457513501.497381 new key \033OH: 0x1033 (Home)
+1457513501.497384 new key \033OF: 0x1034 (End)
+1457513501.497387 new key \033[H: 0x1033 (Home)
+1457513501.497389 new key \033[F: 0x1034 (End)
+1457513501.497392 new key \033Oa: 0x5038 (C-Up)
+1457513501.497395 new key \033Ob: 0x5039 (C-Down)
+1457513501.497398 new key \033Oc: 0x503b (C-Right)
+1457513501.497401 new key \033Od: 0x503a (C-Left)
+1457513501.497404 new key \033[a: 0x9038 (S-Up)
+1457513501.497407 new key \033[b: 0x9039 (S-Down)
+1457513501.497410 new key \033[c: 0x903b (S-Right)
+1457513501.497412 new key \033[d: 0x903a (S-Left)
+1457513501.497415 new key \033[11^: 0x5025 (C-F1)
+1457513501.497418 new key \033[12^: 0x5026 (C-F2)
+1457513501.497421 new key \033[13^: 0x5027 (C-F3)
+1457513501.497424 new key \033[14^: 0x5028 (C-F4)
+1457513501.497427 new key \033[15^: 0x5029 (C-F5)
+1457513501.497430 new key \033[17^: 0x502a (C-F6)
+1457513501.497432 new key \033[18^: 0x502b (C-F7)
+1457513501.497435 new key \033[19^: 0x502c (C-F8)
+1457513501.497438 new key \033[20^: 0x502d (C-F9)
+1457513501.497441 new key \033[21^: 0x502e (C-F10)
+1457513501.497444 new key \033[23^: 0x502f (C-F11)
+1457513501.497447 new key \033[24^: 0x5030 (C-F12)
+1457513501.497450 new key \033[2^: 0x5031 (C-IC)
+1457513501.497452 new key \033[3^: 0x5032 (C-DC)
+1457513501.497455 new key \033[7^: 0x5033 (C-Home)
+1457513501.497458 new key \033[8^: 0x5034 (C-End)
+1457513501.497461 new key \033[6^: 0x5035 (C-NPage)
+1457513501.497464 new key \033[5^: 0x5036 (C-PPage)
+1457513501.497467 new key \033[11$: 0x9025 (S-F1)
+1457513501.497470 new key \033[12$: 0x9026 (S-F2)
+1457513501.497473 new key \033[13$: 0x9027 (S-F3)
+1457513501.497475 new key \033[14$: 0x9028 (S-F4)
+1457513501.497478 new key \033[15$: 0x9029 (S-F5)
+1457513501.497481 new key \033[17$: 0x902a (S-F6)
+1457513501.497484 new key \033[18$: 0x902b (S-F7)
+1457513501.497487 new key \033[19$: 0x902c (S-F8)
+1457513501.497489 new key \033[20$: 0x902d (S-F9)
+1457513501.497492 new key \033[21$: 0x902e (S-F10)
+1457513501.497495 new key \033[23$: 0x902f (S-F11)
+1457513501.497498 new key \033[24$: 0x9030 (S-F12)
+1457513501.497501 new key \033[2$: 0x9031 (S-IC)
+1457513501.497503 new key \033[3$: 0x9032 (S-DC)
+1457513501.497508 new key \033[7$: 0x9033 (S-Home)
+1457513501.497511 new key \033[8$: 0x9034 (S-End)
+1457513501.497514 new key \033[6$: 0x9035 (S-NPage)
+1457513501.497517 new key \033[5$: 0x9036 (S-PPage)
+1457513501.497520 new key \033[11@: 0xd025 (C-S-F1)
+1457513501.497523 new key \033[12@: 0xd026 (C-S-F2)
+1457513501.497526 new key \033[13@: 0xd027 (C-S-F3)
+1457513501.497528 new key \033[14@: 0xd028 (C-S-F4)
+1457513501.497531 new key \033[15@: 0xd029 (C-S-F5)
+1457513501.497534 new key \033[17@: 0xd02a (C-S-F6)
+1457513501.497542 new key \033[18@: 0xd02b (C-S-F7)
+1457513501.497545 new key \033[19@: 0xd02c (C-S-F8)
+1457513501.497548 new key \033[20@: 0xd02d (C-S-F9)
+1457513501.497551 new key \033[21@: 0xd02e (C-S-F10)
+1457513501.497553 new key \033[23@: 0xd02f (C-S-F11)
+1457513501.497556 new key \033[24@: 0xd030 (C-S-F12)
+1457513501.497559 new key \033[2@: 0xd031 (C-S-IC)
+1457513501.497562 new key \033[3@: 0xd032 (C-S-DC)
+1457513501.497565 new key \033[7@: 0xd033 (C-S-Home)
+1457513501.497568 new key \033[8@: 0xd034 (C-S-End)
+1457513501.497571 new key \033[6@: 0xd035 (C-S-NPage)
+1457513501.497573 new key \033[5@: 0xd036 (C-S-PPage)
+1457513501.497577 new key \033[I: 0x1000 ((null))
+1457513501.497579 new key \033[O: 0x1001 ((null))
+1457513501.497582 new key \033OP: 0x1025 (F1)
+1457513501.497585 new key \033OQ: 0x1026 (F2)
+1457513501.497588 new key \033OR: 0x1027 (F3)
+1457513501.497591 new key \033OS: 0x1028 (F4)
+1457513501.497593 new key \033[15~: 0x1029 (F5)
+1457513501.497596 new key \033[17~: 0x102a (F6)
+1457513501.497599 new key \033[18~: 0x102b (F7)
+1457513501.497602 new key \033[19~: 0x102c (F8)
+1457513501.497604 new key \033[20~: 0x102d (F9)
+1457513501.497607 new key \033[21~: 0x102e (F10)
+1457513501.497610 new key \033[23~: 0x102f (F11)
+1457513501.497613 new key \033[24~: 0x1030 (F12)
+1457513501.497616 new key \033[1;2P: 0x9025 (S-F1)
+1457513501.497619 new key \033[1;2Q: 0x9026 (S-F2)
+1457513501.497621 new key \033[1;2R: 0x9027 (S-F3)
+1457513501.497624 new key \033[1;2S: 0x9028 (S-F4)
+1457513501.497627 new key \033[15;2~: 0x9029 (S-F5)
+1457513501.497630 new key \033[17;2~: 0x902a (S-F6)
+1457513501.497633 new key \033[18;2~: 0x902b (S-F7)
+1457513501.497636 new key \033[19;2~: 0x902c (S-F8)
+1457513501.497639 new key \033[20;2~: 0x902d (S-F9)
+1457513501.497642 new key \033[21;2~: 0x902e (S-F10)
+1457513501.497645 new key \033[23;2~: 0x902f (S-F11)
+1457513501.497648 new key \033[24;2~: 0x9030 (S-F12)
+1457513501.497651 new key \033[1;5P: 0x5025 (C-F1)
+1457513501.497654 new key \033[1;5Q: 0x5026 (C-F2)
+1457513501.497657 new key \033[1;5R: 0x5027 (C-F3)
+1457513501.497660 new key \033[1;5S: 0x5028 (C-F4)
+1457513501.497662 new key \033[15;5~: 0x5029 (C-F5)
+1457513501.497665 new key \033[17;5~: 0x502a (C-F6)
+1457513501.497668 new key \033[18;5~: 0x502b (C-F7)
+1457513501.497671 new key \033[19;5~: 0x502c (C-F8)
+1457513501.497674 new key \033[20;5~: 0x502d (C-F9)
+1457513501.497677 new key \033[21;5~: 0x502e (C-F10)
+1457513501.497680 new key \033[23;5~: 0x502f (C-F11)
+1457513501.497682 new key \033[24;5~: 0x5030 (C-F12)
+1457513501.497685 new key \033[1;6P: 0xd025 (C-S-F1)
+1457513501.497688 new key \033[1;6Q: 0xd026 (C-S-F2)
+1457513501.497691 new key \033[1;6R: 0xd027 (C-S-F3)
+1457513501.497694 new key \033[1;6S: 0xd028 (C-S-F4)
+1457513501.497697 new key \033[15;6~: 0xd029 (C-S-F5)
+1457513501.497700 new key \033[17;6~: 0xd02a (C-S-F6)
+1457513501.497703 new key \033[18;6~: 0xd02b (C-S-F7)
+1457513501.497706 new key \033[19;6~: 0xd02c (C-S-F8)
+1457513501.497709 new key \033[20;6~: 0xd02d (C-S-F9)
+1457513501.497712 new key \033[21;6~: 0xd02e (C-S-F10)
+1457513501.497715 new key \033[23;6~: 0xd02f (C-S-F11)
+1457513501.497717 new key \033[24;6~: 0xd030 (C-S-F12)
+1457513501.497720 new key \033[1;3P: 0x3025 (M-F1)
+1457513501.497723 new key \033[1;3Q: 0x3026 (M-F2)
+1457513501.497726 new key \033[1;3R: 0x3027 (M-F3)
+1457513501.497729 new key \033[1;3S: 0x3028 (M-F4)
+1457513501.497732 new key \033[15;3~: 0x3029 (M-F5)
+1457513501.497735 new key \033[17;3~: 0x302a (M-F6)
+1457513501.497738 new key \033[18;3~: 0x302b (M-F7)
+1457513501.497741 new key \033[19;3~: 0x302c (M-F8)
+1457513501.497743 new key \033[20;3~: 0x302d (M-F9)
+1457513501.497746 new key \033[21;3~: 0x302e (M-F10)
+1457513501.497749 new key \033[23;3~: 0x302f (M-F11)
+1457513501.497754 new key \033[24;3~: 0x3030 (M-F12)
+1457513501.497757 new key \033[1;4P: 0xb025 (M-S-F1)
+1457513501.497760 new key \033[1;4Q: 0xb026 (M-S-F2)
+1457513501.497763 new key \033[1;4R: 0xb027 (M-S-F3)
+1457513501.497766 new key \033[2~: 0x1031 (IC)
+1457513501.497768 new key \033[3~: 0x1032 (DC)
+1457513501.497775 replacing key \033OH: 0x1033 (Home)
+1457513501.497778 replacing key \033OF: 0x1034 (End)
+1457513501.497780 new key \033[6~: 0x1035 (NPage)
+1457513501.497783 new key \033[5~: 0x1036 (PPage)
+1457513501.497786 new key \033[Z: 0x1037 (BTab)
+1457513501.497789 replacing key \033OA: 0x1038 (Up)
+1457513501.497792 replacing key \033OB: 0x1039 (Down)
+1457513501.497794 replacing key \033OD: 0x103a (Left)
+1457513501.497797 replacing key \033OC: 0x103b (Right)
+1457513501.497800 new key \033[3;2~: 0x9032 (S-DC)
+1457513501.497803 new key \033[3;3~: 0x3032 (M-DC)
+1457513501.497806 new key \033[3;4~: 0xb032 (M-S-DC)
+1457513501.497818 new key \033[3;5~: 0x5032 (C-DC)
+1457513501.497820 new key \033[3;6~: 0xd032 (C-S-DC)
+1457513501.497823 new key \033[3;7~: 0x7032 (C-M-DC)
+1457513501.497826 new key \033[1;2B: 0x9039 (S-Down)
+1457513501.497829 new key \033[1;3B: 0x3039 (M-Down)
+1457513501.497832 new key \033[1;4B: 0xb039 (M-S-Down)
+1457513501.497835 new key \033[1;5B: 0x5039 (C-Down)
+1457513501.497838 new key \033[1;6B: 0xd039 (C-S-Down)
+1457513501.497840 new key \033[1;7B: 0x7039 (C-M-Down)
+1457513501.497843 new key \033[1;2F: 0x9034 (S-End)
+1457513501.497846 new key \033[1;3F: 0x3034 (M-End)
+1457513501.497849 new key \033[1;4F: 0xb034 (M-S-End)
+1457513501.497852 new key \033[1;5F: 0x5034 (C-End)
+1457513501.497855 new key \033[1;6F: 0xd034 (C-S-End)
+1457513501.497857 new key \033[1;7F: 0x7034 (C-M-End)
+1457513501.497860 new key \033[1;2H: 0x9033 (S-Home)
+1457513501.497863 new key \033[1;3H: 0x3033 (M-Home)
+1457513501.497866 new key \033[1;4H: 0xb033 (M-S-Home)
+1457513501.497869 new key \033[1;5H: 0x5033 (C-Home)
+1457513501.497871 new key \033[1;6H: 0xd033 (C-S-Home)
+1457513501.497874 new key \033[1;7H: 0x7033 (C-M-Home)
+1457513501.497877 new key \033[2;2~: 0x9031 (S-IC)
+1457513501.497880 new key \033[2;3~: 0x3031 (M-IC)
+1457513501.497883 new key \033[2;4~: 0xb031 (M-S-IC)
+1457513501.497886 new key \033[2;5~: 0x5031 (C-IC)
+1457513501.497888 new key \033[2;6~: 0xd031 (C-S-IC)
+1457513501.497891 new key \033[2;7~: 0x7031 (C-M-IC)
+1457513501.497894 new key \033[1;2D: 0x903a (S-Left)
+1457513501.497897 new key \033[1;3D: 0x303a (M-Left)
+1457513501.497900 new key \033[1;4D: 0xb03a (M-S-Left)
+1457513501.497903 new key \033[1;5D: 0x503a (C-Left)
+1457513501.497906 new key \033[1;6D: 0xd03a (C-S-Left)
+1457513501.497908 new key \033[1;7D: 0x703a (C-M-Left)
+1457513501.497911 new key \033[6;2~: 0x9035 (S-NPage)
+1457513501.497914 new key \033[6;3~: 0x3035 (M-NPage)
+1457513501.497917 new key \033[6;4~: 0xb035 (M-S-NPage)
+1457513501.497920 new key \033[6;5~: 0x5035 (C-NPage)
+1457513501.497923 new key \033[6;6~: 0xd035 (C-S-NPage)
+1457513501.497926 new key \033[6;7~: 0x7035 (C-M-NPage)
+1457513501.497928 new key \033[5;2~: 0x9036 (S-PPage)
+1457513501.497931 new key \033[5;3~: 0x3036 (M-PPage)
+1457513501.497934 new key \033[5;4~: 0xb036 (M-S-PPage)
+1457513501.497937 new key \033[5;5~: 0x5036 (C-PPage)
+1457513501.497940 new key \033[5;6~: 0xd036 (C-S-PPage)
+1457513501.497943 new key \033[5;7~: 0x7036 (C-M-PPage)
+1457513501.497946 new key \033[1;2C: 0x903b (S-Right)
+1457513501.497949 new key \033[1;3C: 0x303b (M-Right)
+1457513501.497951 new key \033[1;4C: 0xb03b (M-S-Right)
+1457513501.497954 new key \033[1;5C: 0x503b (C-Right)
+1457513501.497957 new key \033[1;6C: 0xd03b (C-S-Right)
+1457513501.497960 new key \033[1;7C: 0x703b (C-M-Right)
+1457513501.497963 new key \033[1;2A: 0x9038 (S-Up)
+1457513501.497965 new key \033[1;3A: 0x3038 (M-Up)
+1457513501.497968 new key \033[1;4A: 0xb038 (M-S-Up)
+1457513501.497971 new key \033[1;5A: 0x5038 (C-Up)
+1457513501.497974 new key \033[1;6A: 0xd038 (C-S-Up)
+1457513501.497977 new key \033[1;7A: 0x7038 (C-M-Up)
+1457513501.498029 @0 alerts flags added 0x2
+1457513501.498047 spawn: /bin/zsh -- reattach-to-user-namespace -l zsh
+1457513501.498050 spawn: argv[0] = reattach-to-user-namespace -l zsh
+1457513501.498382 @0 alerts timer reset 0
+1457513501.498401 session 0 created
+1457513501.498406 writing 207 to client 7
+1457513501.498416 client 7, status interval 15
+1457513501.498464 session 0 has 3 references
+1457513501.498468 session 0 has 2 references
+1457513501.498477 unref client 7 (2 references)
+1457513501.498482 event dispatch exit
+1457513501.498797 format '#[fg=colour232,bg=colour81,bold] #S #[fg=colour81,bg=colour81,nobold,nounderscore,noitalics]\356\202\260' -> '#[fg=colour232,bg=colour81,bold] 0 #[fg=colour81,bg=colour81,nobold,nounderscore,noitalics]\356\202\260'
+1457513501.499014 format '/usr/bin/osascript ~/.applescripts/current_spotify_song.scpt' -> '/usr/bin/osascript ~/.applescripts/current_spotify_song.scpt'
+1457513501.499236 run job 0x7fd30bf094c0: /usr/bin/osascript ~/.applescripts/current_spotify_song.scpt, pid 55064
+1457513501.499270 format '#[fg=colour234,bg=colour81,nobold,nounderscore,noitalics]\356\202\262#[fg=colour253,bg=colour234,bold] #(/usr/bin/osascript ~/.applescripts/current_spotify_song.scpt) ' -> '#[fg=colour234,bg=colour81,nobold,nounderscore,noitalics]\356\202\262#[fg=colour253,bg=colour234,bold] <'/usr/bin/osascript ~/.applescripts/current_spotify_song.scpt' not ready> '
+1457513501.499541 format '#[fg=colour81,bg=colour232,nobold,nounderscore,noitalics]\356\202\260#[fg=colour253,bg=colour232] #I \356\202\261#[fg=colour253,bg=colour232] #W #[fg=colour232,bg=colour81,nobold,nounderscore,noitalics]\356\202\260' -> '#[fg=colour81,bg=colour232,nobold,nounderscore,noitalics]\356\202\260#[fg=colour253,bg=colour232] 0 \356\202\261#[fg=colour253,bg=colour232] reattach-to-user-namespace #[fg=colour232,bg=colour81,nobold,nounderscore,noitalics]\356\202\260'
+1457513501.500239 @0 active pane not changed
+1457513501.500245 event dispatch enter
+1457513501.500285 job write 0x7fd30bf094c0: /usr/bin/osascript ~/.applescripts/current_spotify_song.scpt, pid 55064, output left 0
+1457513501.500322 event dispatch exit
+1457513501.500327 @0 active pane not changed
+1457513501.500331 event dispatch enter
+1457513501.500420 event dispatch exit
+1457513501.500429 @0 active pane not changed
+1457513501.500434 event dispatch enter
+1457513501.500608 got 208 from client 7
+1457513501.500622 event dispatch exit
+1457513501.500630 @0 active pane not changed
+1457513501.500634 event dispatch enter
+1457513501.504680 %0 has 54 bytes
+1457513501.504695 @0 alerts timer reset 0
+1457513501.504707 input_parse: %0 ground, 54 bytes: zsh:1: command not found: reattach-to-user-namespace\r\n
+1457513501.504758 input_c0_dispatch: '\r'
+1457513501.504762 input_c0_dispatch: '\n'
+1457513501.504766 event dispatch exit
+1457513501.504772 @0 active pane changed
+1457513501.504938 format '#{pane_current_command}' -> 'reattach-to-user-namespace'
+1457513501.504945 format '' -> ''
+1457513501.504949 format '#{?pane_in_mode,[tmux],#{pane_current_command}}#{?pane_dead,[dead],}' -> 'reattach-to-user-namespace'
+1457513501.504964 @0 name not changed (still reattach-to-user-namespace)
+1457513501.504967 event dispatch enter
+1457513501.505013 session 0 has 2 references
+1457513501.505019 session 0 destroyed
+1457513501.505023 session 0 has 2 references
+1457513501.505029 session 0 has 1 references
+1457513501.505058 event dispatch exit
+1457513501.505062 writing 203 to client 7
+1457513501.505066 event dispatch enter
+1457513501.505083 session 0 freed (0 references)
+1457513501.505087 event dispatch exit
+1457513501.505089 event dispatch enter
+1457513501.505290 got 205 from client 7
+1457513501.505426 writing 204 to client 7
+1457513501.505436 event dispatch exit
+1457513501.505441 event dispatch enter
+1457513501.505463 event dispatch exit
+1457513501.505468 event dispatch enter
+1457513501.505983 lost client 7
+1457513501.506029 unref client 7 (1 references)
+1457513501.506057 event dispatch exit
