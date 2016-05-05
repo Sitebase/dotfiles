@@ -38,3 +38,7 @@ Analytics
 disqus
 url
 Promotor
+wget
+tmux
+dotfiles
+zsh
