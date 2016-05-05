@@ -4,6 +4,7 @@ These dotfiles work for bash and zsh.
 To install you just use one of the following commands depending on your environment. Best is to clone it in your home folder, so `~/dotfiles`. You can put it elsewhere but just make sure you make a symlink from `~/dotfiles`.
 The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
+
 ```
 # bash
 git clone https://github.com/sitebase/dotfiles.git && cd dotfiles && source bootstrap.sh
