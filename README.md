@@ -5,6 +5,7 @@ To install you just use one of the following commands depending on your environm
 The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 
+
 ```
 # bash
 git clone https://github.com/sitebase/dotfiles.git && cd dotfiles && source bootstrap.sh
@@ -29,7 +30,7 @@ Alternatively, to update while avoiding the confirmation prompt:
 ./bootstrap.sh
 ```
 
-# Extend 
+# Extend
 
 ~/.path and ~/.extra are also files that get sourced if they exist so you can use these to for example add extra location to the PATH variable.
 The .extra file can for example be used to store some custom functions or so.
@@ -41,7 +42,7 @@ Below is an example of a .path file that will add the utils folder to PATH.
 export PATH="~/utils:$PATH"
 ```
 
-# Brew 
+# Brew
 
 Add script to reinstall all my brew packages
 
