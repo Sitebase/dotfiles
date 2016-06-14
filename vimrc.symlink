@@ -35,6 +35,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'AndrewRadev/switch.vim'
 Plugin 'tmhedberg/matchit'
+Plugin 'sickill/vim-pasta'
 " Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'terryma/vim-multiple-cursors'
 
