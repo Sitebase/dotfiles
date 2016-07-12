@@ -34,8 +34,8 @@ Plugin 'mxw/vim-jsx'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'AndrewRadev/switch.vim'
-Plugin 'tmhedberg/matchit'
 Plugin 'sickill/vim-pasta'
+Plugin 'Valloric/MatchTagAlways'
 " Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'terryma/vim-multiple-cursors'
 
@@ -206,6 +206,7 @@ let g:switch_custom_definitions =
     \	['on', 'off'],
     \	['enable', 'disable'],
     \	['print_r', 'var_dump'],
+    \	['div', 'span'],
     \	['private', 'protected', 'public'],
     \	['string', 'bool', 'number', 'array', 'object', 'oneOfType'],
     \ ]
@@ -213,6 +214,17 @@ let g:switch_custom_definitions =
 nnoremap - :Switch<cr>
 
 set wildignore=.o,.obj,.git,node_modules/**,custom_modules/**,converage/**
+
+" MatchTagAlways
+let g:mta_filetypes = {
+            \ 'html' : 1,
+            \ 'xhtml' : 1,
+            \ 'xml' : 1,
+            \ 'javascript.jsx' : 1,
+            \ 'javascript' : 1,
+            \ 'jinja' : 1,
+            \}
+nnoremap <leader>% :MtaJumpToOtherTag<cr>
 
 " Syntastic
 function! ESLintArgs()
