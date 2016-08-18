@@ -47,9 +47,6 @@ export PATH=$PATH:$AWS_EBT_HOME/bin
 # BuboBox dev
 export APPLICATION_ENV=development
 
-# Brew includes
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
-
 # Home bin
 export PATH=$PATH:~/bin
 
