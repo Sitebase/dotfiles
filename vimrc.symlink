@@ -7,6 +7,7 @@ filetype off                  " required for Vundle to work
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
@@ -298,6 +299,11 @@ nnoremap ; :
 
 " space open/closes folds
 nnoremap <space> za
+
+
+" jump to previous and next error
+nmap <leader>ne :lnext<cr>
+nmap <leader>pe :lprev<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
