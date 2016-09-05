@@ -37,7 +37,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'AndrewRadev/switch.vim'
 Plugin 'sickill/vim-pasta'
 Plugin 'Valloric/MatchTagAlways'
-" Plugin 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
@@ -125,8 +125,12 @@ let g:rehash256 = 1
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 
+
 let g:molokai_original = 1
 colorscheme molokai
+
+" :hi Visual term=reverse cterm=reverse guibg=Grey
+highlight Visual term=none cterm=none ctermbg=Yellow ctermfg=Black
 
 " }}}
 
@@ -219,6 +223,7 @@ set wildignore=.o,.obj,.git,node_modules/**,custom_modules/**,converage/**
 " MatchTagAlways
 let g:mta_filetypes = {
             \ 'html' : 1,
+            \ 'php' : 1,
             \ 'xhtml' : 1,
             \ 'xml' : 1,
             \ 'javascript.jsx' : 1,
@@ -281,6 +286,12 @@ imap jj <Esc>
 " these mapping make it possible to use visual mode selection
 " and hit ctrl-c to copy to the system clipboard
 vnoremap <C-c> "*y"
+
+
+" fixes the problem of pasting when in visual select that the original
+" clipboard content gets lost
+vnoremap p \"0p
+vnoremap P \"0P
 
 " ctrl+s to save file
 " qq to quit file
