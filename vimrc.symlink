@@ -281,7 +281,6 @@ let @f='f a'
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
-map <c-space> ?
 imap jj <Esc>
 
 " Map for copy and pasting using the system clipboard
@@ -307,13 +306,12 @@ nmap <tab> :b#<cr>
 
 nnoremap ; :
 
-" space open/closes folds
-nnoremap <space> za
-
-
 " jump to previous and next error
 nmap <leader>ne :lnext<cr>
 nmap <leader>pe :lprev<cr>
+
+nnoremap <c-f> :Ag<SPACE>
+vnoremap <c-f> y:Ag<SPACE><C-R>"<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
