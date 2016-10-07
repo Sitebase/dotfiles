@@ -86,8 +86,9 @@ set mouse=a                         " Enable mouse in all modes
 set noerrorbells                    " Disable error bells
 set nostartofline                   " Don’t reset cursor to start of line when moving around.
 set ruler                           " Show the cursor position
-set shortmess=atI                   " Don’t show the intro message when starting Vim
+set shortmess=aoOtI                   " Don’t show the intro message when starting Vim
 set showmode                        " Show the current mode
+set cmdheight=2                     " prevent `press ENTER` prompt 
 set title                           " Show the filename in the window titlebar
 set showcmd                         " Show the (partial) command as it’s being typed
 set scrolloff=3                     " Start scrolling three lines before the horizontal window border
@@ -282,6 +283,7 @@ let @f='f a'
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 imap jj <Esc>
+imap JJ <Esc>:w<cr>
 
 " Map for copy and pasting using the system clipboard
 " register "* is on Vim mac the system clipboard
@@ -335,6 +337,10 @@ nmap <leader>gc :Gcommit<CR>
 nmap <leader>gb :Gblame<CR>
 nmap <leader>gd :Gdiff<CR>
 nmap <leader>gg :Gbrowse<CR>
+
+" push current branch
+" no really fugitive related but place it here because it's git related
+nmap <leader>gp :!git push origin `git rev-parse --abbrev-ref HEAD`<CR><CR>
 
 " Vimux
 nmap <leader>nt :call VimuxRunCommand("clear; npm test")<CR>
