@@ -15,3 +15,6 @@ Thumbs.db
 
 vim.symlink/bundle/
 vim.symlink/swaps/
+
+# Ctags files
+tags

@@ -4,6 +4,7 @@ set nocompatible              " be iMproved, required"
 filetype off                  " required for Vundle to work
 
 " set the runtime path to include Vundle and initialize
+set runtimepath+=/usr/local/share/vim/vim80/
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -38,7 +39,7 @@ Plugin 'AndrewRadev/switch.vim'
 Plugin 'sickill/vim-pasta'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'terryma/vim-multiple-cursors'
-" Plugin 'terryma/vim-multiple-cursors'
+Plugin 'othree/javascript-libraries-syntax.vim'     " omni complete js lib support 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -106,6 +107,7 @@ set foldmethod=indent               " use indentation to fold
 set foldnestmax=2
 set nofoldenable                    " by default don't fold if opening a file
 set foldlevel=2
+set completeopt=longest,menuone     " insert longest common text of all matches, show menu when only one item
 
 " }}}
 
@@ -191,6 +193,9 @@ autocmd FileType vim              let b:comment_leader = '" '
 noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
 noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 
+" Omni complete: make more IDE like
+" http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
+
 " the following line makes vim ignore camelCase and CamelCase words so they
 " are not highlighted as spelling mistakes
 autocmd Syntax * syn match CamelCase "\(\<\|_\)\%(\u\l*\)\{2,}\(\>\|_\)\|\<\%(\l\l*\)\%(\u\l*\)\{1,}\>" transparent containedin=.*Comment.*,.*String.*,VimwikiLink contains=@NoSpell contained")))"
@@ -269,6 +274,9 @@ let g:ag_working_path_mode = 0
 
 " NerdCommenter
 let NERDSpaceDelims=1 " Add extra space otherwise eslint starts complaining about these lines 
+
+" javascript lib syntax
+let g:used_javascript_libs = 'underscore,react'
 
 " Vim JSX
 let g:jsx_ext_required = 0
@@ -418,7 +426,6 @@ fun! Google()
     silent exec "!open '".url."'"
 	redraw!
 endfun
-
 
 " {{{ Color fine tune
 hi clear SpellBad
