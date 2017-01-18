@@ -1,0 +1,127 @@
+#!/bin/zsh
+
+SESSIONNAME="ambassify"
+CODEFOLDER="~/Code/ambassify"
+tmux has-session -t $SESSIONNAME &> /dev/null
+
+if [ $? != 0 ]
+ then
+
+    tmux new-session -s $SESSIONNAME -n main -d
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER && clear" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER && clear" C-m
+
+    # manage pane
+    tmux new-window  -t $SESSIONNAME -n manage
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/manage" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/manage && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/manage && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
+    # components pane
+    tmux new-window  -t $SESSIONNAME -n components
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/components" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/components && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/components && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
+    # scrapy pane
+   	tmux new-window  -t $SESSIONNAME -n scrapy
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/scrapy" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/scrapy && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/scrapy && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
+    # api pane
+    tmux new-window  -t $SESSIONNAME -n api
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/api" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/api && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/api && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
+    # devbox pane
+    tmux new-window  -t $SESSIONNAME -n devbox
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/devbox" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/devbox && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/devbox && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
+    # vision pane
+    tmux new-window  -t $SESSIONNAME -n vision
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/vision" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/vision && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/vision && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
+    # unity pane
+    tmux new-window  -t $SESSIONNAME -n unity
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/unity" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/unity && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/unity && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
+    # memes pane
+    # tmux new-window  -t $SESSIONNAME -n memes
+    # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/memes" C-m
+    # tmux split-window -v
+    # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/memes && clear" C-m
+    # tmux split-window -h
+    # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/memes && clear" C-m
+    # tmux resize-pane -t $SESSIONNAME -y 20
+
+    # templates pane
+    tmux new-window  -t $SESSIONNAME -n templates
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/templates" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/templates && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/templates && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
+    # presets pane
+    tmux new-window  -t $SESSIONNAME -n presets
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/presets" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/presets && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/presets && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
+    # widget pane
+    # tmux new-window  -t $SESSIONNAME -n widget
+    # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/widget && clear" C-m
+    # tmux split-window -h
+    # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/widget && clear" C-m
+
+    # forwrd pane
+    #tmux new-window  -t $SESSIONNAME -n forward
+    #tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/forward && clear" C-m
+    # tmux split-window -h
+    # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/forward && clear" C-m
+
+    # portal pane
+    # tmux new-window  -t $SESSIONNAME -n portal
+    # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/portal && clear" C-m
+    # tmux split-window -h
+    # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/portal && clear" C-m
+
+fi
+
+tmux attach -t $SESSIONNAME

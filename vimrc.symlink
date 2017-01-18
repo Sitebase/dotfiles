@@ -220,6 +220,7 @@ let g:switch_custom_definitions =
     \	['left', 'center', 'right'],
     \	['TRUE', 'FALSE'],
     \	['on', 'off'],
+    \	['male', 'female'],
     \	['enable', 'disable'],
     \	['print_r', 'var_dump'],
     \	['div', 'span'],
@@ -263,6 +264,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|custom_modules\|covera
 " without this option if you would open a file in a submodule. the next call
 " to ctrlp will only search in this submodule
 let g:ctrlp_working_path_mode = 0  
+let g:ctrlp_show_hidden = 1
 
 " SuperTab
 " let g:SuperTabDefaultCompletionType = "context" " fixes snipmate not working
