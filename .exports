@@ -44,8 +44,9 @@ export ELASTICBEANSTALK_URL=https://elasticbeanstalk.eu-west-1.amazonaws.com
 export AWS_EBT_HOME=/Applications/AWS/elasticbeanstalk-cli/elasticbeanstalk-cli
 export PATH=$PATH:$AWS_EBT_HOME/bin
 
-# BuboBox dev
+# BuboBox and Ambassify dev
 export APPLICATION_ENV=development
+export AMBASSIFY_CODE_DIR=/Users/wim/Code/ambassify
 
 # Home bin
 export PATH=$PATH:~/bin
