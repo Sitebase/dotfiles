@@ -7,7 +7,10 @@ set-option -g default-terminal "screen-256color"
 setw -g mode-keys vi
 
 # allow to select pane with mouse
+set -g mode-mouse on
+set -g mouse-resize-pane on
 set -g mouse-select-pane on
+set -g mouse-select-window on
 
 # disable auto window renames
 set-option -g allow-rename off

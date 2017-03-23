@@ -95,6 +95,15 @@ if [ $? != 0 ]
     tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/templates && clear" C-m
     tmux resize-pane -t $SESSIONNAME -y 20
 
+    # website pane
+    tmux new-window  -t $SESSIONNAME -n website
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/website" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/website && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/website && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
     # presets pane
     tmux new-window  -t $SESSIONNAME -n presets
     tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/presets" C-m
