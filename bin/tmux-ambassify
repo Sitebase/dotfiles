@@ -113,6 +113,24 @@ if [ $? != 0 ]
     tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/presets && clear" C-m
     tmux resize-pane -t $SESSIONNAME -y 20
 
+    # workers pane
+    tmux new-window  -t $SESSIONNAME -n workers
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/workers" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/workers && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/workers && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
+    # momentum pane
+    tmux new-window  -t $SESSIONNAME -n momentum
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/momentum" C-m
+    tmux split-window -v
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/momentum && clear" C-m
+    tmux split-window -h
+    tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/momentum && clear" C-m
+    tmux resize-pane -t $SESSIONNAME -y 20
+
     # widget pane
     # tmux new-window  -t $SESSIONNAME -n widget
     # tmux send-keys -t $SESSIONNAME "cd $CODEFOLDER/widget && clear" C-m
